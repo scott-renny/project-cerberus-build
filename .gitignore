@@ -1,0 +1,30 @@
+# Operating-system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Local notes and secrets
+.env
+.env.*
+!.env.example
+private/
+secrets/
+*.key
+*.pem
+*.pfx
+*.p12
+
+# Logs, reports, and large generated files
+*.log
+reports/raw/
+benchmarks/raw/
+*.iso
+*.vhd
+*.vhdx
+*.vmdk
+
