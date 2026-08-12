@@ -4,7 +4,8 @@ Complete this checklist using exact manufacturer model numbers before ordering.
 
 ## Owned foundation
 
-- [x] MUSETEX K2 case is owned.
+- [x] MUSETEX K2 case is owned and has arrived.
+- [ ] Inspect the case and retain its hardware, accessories, and documentation.
 - [x] MSI MAG B850 Tomahawk MAX WiFi motherboard is owned and has arrived.
 - [ ] Inspect the motherboard and retain all packaging and accessories.
 - [ ] Record a sanitized arrival photo in the build log when the image is available.
