@@ -15,7 +15,8 @@ All notable changes to Project Cerberus Build are recorded here.
 
 ### Changed
 
-- The original CA$2,000–2,200 budget is now identified as a historical planning target requiring full revision.
+- Core budget revised to a preliminary CA$3,000+ before tax, excluding the case; the final ceiling remains TBD.
+- The original CA$2,000–2,200 budget is retained only as a superseded historical target.
 - MUSETEX K2 case is now recorded as purchased, owned, and arrived.
 - MSI MAG B850 Tomahawk MAX WiFi is now recorded as purchased, owned, and arrived.
 - Cooler direction updated to MSI MAG CORELIQUID A15 360.
