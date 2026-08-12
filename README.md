@@ -4,75 +4,82 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Documentation](https://img.shields.io/badge/documentation-in%20progress-6f42c1)](docs/planning/parts-list.md)
 
-Designing, building, and documenting a dual-GPU cybersecurity workstation for virtualization, streaming, development, and a six-monitor command center.
+Designing, building, and documenting Cerberus: a physical dual-GPU cybersecurity workstation for virtualization, streaming, development, and a six-monitor command center.
 
-> **Status:** Planning  
-> **Version:** 0.1.0  
+> **Status:** Planning and component acquisition  
+> **Documentation version:** 0.2.0  
+> **Current operational baseline:** Version 1 — existing Windows 10 dual-monitor workstation  
+> **Future build:** Cerberus rebuild  
 > **Budget target:** CA$2,000–2,200, excluding the case
+
+## Version scope
+
+Version 1 is the existing Windows 10 dual-monitor workstation and remains the operational baseline. It is not the Cerberus rebuild.
+
+The future Cerberus rebuild is a separate physical workstation build now in planning and component acquisition. Its target is Windows 11 Pro, two GPUs, and six directly connected displays. See [Version History](docs/history/version-history.md).
+
+## Confirmed hardware status
+
+| Component | Selection | Status |
+|---|---|---|
+| Case | MUSETEX K2 | **Owned** |
+| Motherboard | MSI MAG B850 Tomahawk MAX WiFi | **Owned — arrived** |
+| CPU | AMD Ryzen 9 9900X | Planned / locked direction |
+| Cooler | MSI MAG CORELIQUID A15 360 | Current choice |
+| Memory | 64 GB (2x32 GB) DDR5-6000 EXPO | Selecting |
+| Storage | 2 TB PCIe 4.0 NVMe SSD | Planned |
+| Primary GPU | NVIDIA GeForce RTX 5060 Ti 16 GB | Required; exact replacement model selecting |
+| Secondary GPU | Low-power display GPU | Selecting |
+| Power supply | Corsair RM850e (2025) | Current choice |
+| UPS | CyberPower CP1500PFCLCD, 1500 VA / 1000 W | Current choice |
+
+The original MSI Ventus RTX 5060 Ti model became unavailable, so it must not be treated as the selected card. The replacement must still provide 16 GB VRAM and fit the final dual-GPU layout.
+
+Because the exact motherboard is now owned, its physical slot spacing and documented lane allocation can be used to validate coexistence of the primary GPU, secondary display GPU, and any USB expansion card before those cards are purchased.
+
+Specific models and current pricing are tracked in [Parts List](docs/planning/parts-list.md) and [Budget](docs/planning/budget.md). A current choice is not purchased unless explicitly marked owned.
 
 ## Purpose
 
-Project Cerberus is a purpose-built workstation designed to support:
+Project Cerberus is designed to support:
 
 - Cybersecurity labs and blue-team workflows
 - Multiple concurrent virtual machines
 - Docker, WSL, and development workloads
-- OBS capture and hardware encoding
+- OBS capture and NVIDIA hardware encoding
 - Six directly connected displays across two GPUs
 - Straightforward storage and memory expansion
 
-## Planned hardware
-
-| Component | Selection | Status |
-|---|---|---|
-| Case | MUSETEX K2 | Purchased |
-| CPU | AMD Ryzen 9 9900X | Planned |
-| Cooler | Thermalright Phantom Spirit 120 SE | Planned |
-| Motherboard | B850 ATX board with two full-length PCIe slots | Under review |
-| Memory | 64 GB (2x32 GB) DDR5-6000 CL30 | Planned |
-| Storage | 2 TB PCIe 4.0 NVMe SSD | Planned |
-| Primary GPU | NVIDIA GeForce RTX 5060 Ti 16 GB | Planned |
-| Display GPU | Intel Arc A310 | Planned |
-| Power supply | 850–1000 W, 80 Plus Gold, ATX 3.x | Under review |
-
-Specific models and current pricing are tracked in [Parts List](docs/planning/parts-list.md) and [Budget](docs/planning/budget.md). No component is considered final until physical clearance, PCIe layout, display outputs, and power requirements are verified.
-
 ## Design priorities
 
-1. Preserve the Ryzen 9 9900X and 64 GB memory within the target budget.
-2. Keep the second GPU in the initial build for direct monitor connections.
-3. Start with one 2 TB SSD and expand only when capacity requires it.
-4. Prefer wired 2.5 Gb Ethernet; onboard Wi-Fi is optional.
-5. Maintain safe airflow and slot clearance for both GPUs.
-6. Document decisions, testing, changes, and lessons learned.
-
-## Display plan
-
-The intended topology is four displays on the NVIDIA GPU and two auxiliary displays on the Intel GPU. The final assignment depends on the exact ports, resolutions, refresh rates, and inputs of all six monitors. See [Display Plan](docs/displays/display-plan.md).
+1. Preserve the Ryzen 9 9900X and 64 GB memory direction within the target budget.
+2. Keep a secondary, low-power display GPU in the initial Cerberus build.
+3. Validate motherboard slot allocation and physical clearance before selecting expansion cards.
+4. Start with one 2 TB SSD and expand only when capacity requires it.
+5. Prefer wired 2.5 Gb Ethernet.
+6. Maintain safe airflow and slot clearance for both GPUs.
+7. Document decisions, testing, changes, and lessons learned.
 
 ## Documentation
 
 - [Requirements](docs/planning/requirements.md)
 - [Parts List](docs/planning/parts-list.md)
-- [Budget](docs/planning/budget.md)
+- [Milestones](docs/planning/milestones.md)
 - [Compatibility Checklist](docs/planning/compatibility-checklist.md)
 - [Decision Log](docs/planning/decision-log.md)
+- [Version History](docs/history/version-history.md)
 - [Build Day](docs/build/build-day.md)
-- [BIOS Configuration](docs/configuration/bios.md)
-- [Windows Installation](docs/configuration/windows.md)
-- [System Hardening](docs/configuration/hardening.md)
 - [Display Plan](docs/displays/display-plan.md)
 - [Dual-GPU Setup](docs/displays/dual-gpu.md)
 - [Test Plan](docs/testing/test-plan.md)
-- [Benchmarks and Thermals](docs/testing/benchmarks.md)
-- [Maintenance](docs/operations/maintenance.md)
 - [Upgrade Roadmap](docs/operations/upgrades.md)
 
 ## Project phases
 
-- **Planning:** select parts, confirm compatibility, and record costs.
-- **Assembly:** build the system and document installation details.
-- **Configuration:** update firmware, install Windows and drivers, and configure both GPUs.
+- **Version 1 baseline:** existing Windows 10 dual-monitor system.
+- **Planning and acquisition:** select Cerberus parts, confirm compatibility, and record purchases.
+- **Assembly:** build the physical workstation and document installation details.
+- **Configuration:** update firmware, install Windows 11 and drivers, and configure both GPUs.
 - **Validation:** test memory, storage, thermals, stability, displays, virtualization, and streaming.
 - **Operations:** record maintenance, firmware changes, and upgrades.
 
