@@ -45,7 +45,9 @@ Because the exact motherboard is now owned, its physical slot spacing and docume
 
 ## Relationship to Project Ares
 
-Cerberus is the primary workstation and command center. Project Ares is a separate physical system intended for specialized, isolated, or infrastructure workloads. Cerberus may retain optional local virtualization capability for occasional testing, but it is not being designed as the primary VM host.
+Cerberus will become the primary workstation and command center. When Cerberus is validated and takes over that role, the current Version 1 Windows 10 workstation will be retired from primary workstation duty and repurposed as **Ares V1**.
+
+Ares V1 will therefore reuse the existing system rather than require an entirely new machine. It will become a separate physical system for specialized, isolated, or infrastructure workloads. Cerberus may retain optional local virtualization capability for occasional testing, but it is not being designed as the primary VM host.
 
 Specific models and current pricing are tracked in [Parts List](docs/planning/parts-list.md) and [Budget](docs/planning/budget.md). A current choice is not purchased unless explicitly marked owned.
 
