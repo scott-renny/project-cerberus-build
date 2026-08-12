@@ -18,7 +18,7 @@
 
 ## Constraints and confirmed direction
 
-- Reuse the owned MUSETEX K2 case.
+- Use the owned, arrived MUSETEX K2 case.
 - Use the owned, arrived MSI MAG B850 Tomahawk MAX WiFi motherboard.
 - Target CA$2,000–2,200 before tax, excluding the case.
 - Retain the AMD Ryzen 9 9900X direction.
