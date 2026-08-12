@@ -10,7 +10,7 @@ Designing, building, and documenting Cerberus: a physical dual-GPU cybersecurity
 > **Documentation version:** 0.2.0  
 > **Current operational baseline:** Version 1 — existing Windows 10 dual-monitor workstation  
 > **Future build:** Cerberus rebuild  
-> **Budget target:** CA$2,000–2,200, excluding the case
+> **Preliminary core budget:** CA$3,000+, excluding the case; final ceiling TBD
 
 ## Version scope
 
@@ -52,7 +52,7 @@ Project Cerberus is designed to support:
 
 ## Design priorities
 
-1. Preserve the Ryzen 9 9900X and 64 GB memory direction within the target budget.
+1. Preserve the Ryzen 9 9900X and 64 GB memory direction while refining the preliminary CA$3,000+ core budget.
 2. Keep a secondary, low-power display GPU in the initial Cerberus build.
 3. Validate motherboard slot allocation and physical clearance before selecting expansion cards.
 4. Start with one 2 TB SSD and expand only when capacity requires it.
