@@ -10,6 +10,8 @@ Version 1 is the existing workstation configuration:
 
 Version 1 remains the usable baseline until the future Cerberus workstation is assembled, configured, tested, and accepted. Planned Cerberus parts must not be described as installed in Version 1.
 
+After Cerberus takes over as the primary workstation, this Windows 10 system will be retired from its current role and repurposed as **Ares V1**. The hardware is being reused; Ares V1 is not currently planned as a completely new system purchase. Its operating system, final role, and any required upgrades will be documented separately before deployment.
+
 ## Future Cerberus rebuild — Planning and acquisition
 
 Cerberus is a physical workstation rebuild targeting:
@@ -38,6 +40,6 @@ Cerberus is a physical workstation rebuild targeting:
 
 ### System boundary
 
-Cerberus will be the primary workstation and command center. Project Ares will be a separate physical system for specialized, isolated, or infrastructure workloads. Local virtualization on Cerberus is optional rather than a primary design objective.
+Cerberus will be the primary workstation and command center. Ares V1 will be created by repurposing the retired Version 1 Windows 10 workstation as a separate physical system for specialized, isolated, or infrastructure workloads. Local virtualization on Cerberus is optional rather than a primary design objective.
 
 The future rebuild becomes a new operational version only after assembly and validation are complete.
