@@ -13,6 +13,7 @@ All notable changes to Project Cerberus Build are recorded here.
 
 ### Changed
 
+- MUSETEX K2 case is now recorded as purchased, owned, and arrived.
 - MSI MAG B850 Tomahawk MAX WiFi is now recorded as purchased, owned, and arrived.
 - Cooler direction updated to MSI MAG CORELIQUID A15 360.
 - Primary GPU remains an RTX 5060 Ti 16 GB requirement, but the exact replacement model is selecting because the original MSI Ventus model became unavailable.
