@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Documentation](https://img.shields.io/badge/documentation-in%20progress-6f42c1)](docs/planning/parts-list.md)
 
-Designing, building, and documenting Cerberus: a physical dual-GPU cybersecurity workstation for virtualization, streaming, development, and a six-monitor command center.
+Designing, building, and documenting Cerberus: a physical dual-GPU cybersecurity workstation for operations, development, AI experimentation, content creation, and a six-monitor command center.
 
 > **Status:** Planning and component acquisition  
 > **Documentation version:** 0.2.0  
@@ -20,7 +20,7 @@ The future Cerberus rebuild is a separate physical workstation build now in plan
 
 ## Why build it
 
-Cerberus became a custom build because it was too difficult to buy a complete off-the-shelf system that provided everything required in one machine. The project needs a specific balance of high-core-count virtualization performance, 64 GB of fast memory, NVIDIA encoding and compute, direct support for six monitors through two GPUs, usable PCIe expansion, strong cooling, reliable power, and a clear upgrade path.
+Cerberus became a custom build because it was too difficult to buy a complete off-the-shelf system that provided everything required in one machine. The project needs a specific balance of strong concurrent-workload performance, 64 GB of fast memory, NVIDIA encoding and compute, direct support for six monitors through two GPUs, usable PCIe expansion, strong cooling, reliable power, and a clear upgrade path.
 
 Prebuilt systems generally forced compromises in one or more of those areas and offered less control over exact motherboard layout, GPU clearance, power-supply quality, cooling, and future expansion. Building Cerberus component by component makes those constraints explicit and allows every part to be selected and validated against the real workload.
 
@@ -43,6 +43,10 @@ The original MSI Ventus RTX 5060 Ti model became unavailable, so it must not be 
 
 Because the exact motherboard is now owned, its physical slot spacing and documented lane allocation can be used to validate coexistence of the primary GPU, secondary display GPU, and any USB expansion card before those cards are purchased.
 
+## Relationship to Project Ares
+
+Cerberus is the primary workstation and command center. Project Ares is a separate physical system intended for specialized, isolated, or infrastructure workloads. Cerberus may retain optional local virtualization capability for occasional testing, but it is not being designed as the primary VM host.
+
 Specific models and current pricing are tracked in [Parts List](docs/planning/parts-list.md) and [Budget](docs/planning/budget.md). A current choice is not purchased unless explicitly marked owned.
 
 ## Purpose
@@ -50,8 +54,8 @@ Specific models and current pricing are tracked in [Parts List](docs/planning/pa
 Project Cerberus is designed to support:
 
 - Cybersecurity labs and blue-team workflows
-- Multiple concurrent virtual machines
-- Docker, WSL, and development workloads
+- Software development, WSL, containers, and technical research
+- AI experimentation and GPU-accelerated workloads
 - OBS capture and NVIDIA hardware encoding
 - Six directly connected displays across two GPUs
 - Straightforward storage and memory expansion
@@ -86,7 +90,7 @@ Project Cerberus is designed to support:
 - **Planning and acquisition:** select Cerberus parts, confirm compatibility, and record purchases.
 - **Assembly:** build the physical workstation and document installation details.
 - **Configuration:** update firmware, install Windows 11 and drivers, and configure both GPUs.
-- **Validation:** test memory, storage, thermals, stability, displays, virtualization, and streaming.
+- **Validation:** test memory, storage, thermals, stability, displays, GPU acceleration, and streaming.
 - **Operations:** record maintenance, firmware changes, and upgrades.
 
 ## Security and privacy
