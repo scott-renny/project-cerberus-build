@@ -4,7 +4,7 @@
 
 **Status:** Accepted direction  
 **Decision:** Plan the Cerberus rebuild around the AMD Ryzen 9 9900X.  
-**Reason:** Twelve cores and twenty-four threads suit concurrent virtual machines, containers, development, and streaming workloads.
+**Reason:** Twelve cores and twenty-four threads suit demanding concurrent cybersecurity, development, analysis, AI, encoding, and content-creation workloads.
 
 ## ADR-002: Use two GPUs
 
@@ -52,4 +52,10 @@
 
 **Status:** Accepted  
 **Decision:** Build the Cerberus workstation from individually selected components rather than purchase a complete prebuilt system.  
-**Reason:** It was too difficult to find a purchasable system that combined the required virtualization performance, 64 GB memory direction, NVIDIA compute and encoding, six-monitor dual-GPU layout, usable PCIe expansion, cooling, power quality, and upgrade flexibility without unacceptable compromises. A custom build provides control over the exact motherboard, slot layout, clearances, cooling, power supply, and future expansion.
+**Reason:** It was too difficult to find a purchasable system that combined the required concurrent-workload performance, 64 GB memory direction, NVIDIA compute and encoding, six-monitor dual-GPU layout, usable PCIe expansion, cooling, power quality, and upgrade flexibility without unacceptable compromises. A custom build provides control over the exact motherboard, slot layout, clearances, cooling, power supply, and future expansion.
+
+## ADR-010: Separate Cerberus from Project Ares
+
+**Status:** Accepted  
+**Decision:** Use Cerberus as the primary cybersecurity workstation and command center. Develop Project Ares as a separate physical system for specialized, isolated, or infrastructure workloads.  
+**Reason:** Separating these roles keeps Cerberus focused on interactive workstation work and avoids presenting it as the primary virtualization host. Cerberus may still support occasional local VMs, WSL, or containers when useful.
