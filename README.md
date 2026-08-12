@@ -18,6 +18,12 @@ Version 1 is the existing Windows 10 dual-monitor workstation and remains the op
 
 The future Cerberus rebuild is a separate physical workstation build now in planning and component acquisition. Its target is Windows 11 Pro, two GPUs, and six directly connected displays. See [Version History](docs/history/version-history.md).
 
+## Why build it
+
+Cerberus became a custom build because it was too difficult to buy a complete off-the-shelf system that provided everything required in one machine. The project needs a specific balance of high-core-count virtualization performance, 64 GB of fast memory, NVIDIA encoding and compute, direct support for six monitors through two GPUs, usable PCIe expansion, strong cooling, reliable power, and a clear upgrade path.
+
+Prebuilt systems generally forced compromises in one or more of those areas and offered less control over exact motherboard layout, GPU clearance, power-supply quality, cooling, and future expansion. Building Cerberus component by component makes those constraints explicit and allows every part to be selected and validated against the real workload.
+
 ## Confirmed hardware status
 
 | Component | Selection | Status |
