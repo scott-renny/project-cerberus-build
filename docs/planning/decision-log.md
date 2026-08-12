@@ -2,13 +2,14 @@
 
 ## ADR-001: Keep the Ryzen 9 9900X
 
-**Status:** Proposed  
+**Status:** Accepted direction  
+**Decision:** Plan the Cerberus rebuild around the AMD Ryzen 9 9900X.  
 **Reason:** Twelve cores and twenty-four threads suit concurrent virtual machines, containers, development, and streaming workloads.
 
 ## ADR-002: Use two GPUs
 
 **Status:** Accepted  
-**Decision:** Use an NVIDIA primary GPU and a low-power Intel GPU for additional direct display outputs.  
+**Decision:** Use an NVIDIA RTX 5060 Ti 16 GB as the primary GPU and a small, low-power secondary GPU for additional direct display outputs. The exact models remain under selection.  
 **Reason:** Six monitors exceed the typical four-display limit of one consumer GPU, and direct connections are preferred over an MST or USB display hub.
 
 ## ADR-003: Begin with one SSD
@@ -21,10 +22,28 @@
 
 **Status:** Accepted  
 **Decision:** Use 2.5 Gb Ethernet as the primary network connection.  
-**Reason:** The workstation will connect to an existing switch and access-point infrastructure; Wi-Fi 7 is not a purchasing priority.
+**Reason:** The workstation will connect to existing network infrastructure; Wi-Fi is available on the selected motherboard but is not the purchasing driver.
 
-## ADR-005: Use air cooling
+## ADR-005: Use a 360 mm liquid cooler
 
-**Status:** Proposed  
-**Reason:** A high-quality dual-tower air cooler offers strong value, low maintenance, and adequate performance when case clearance is verified.
+**Status:** Current choice  
+**Decision:** Use the MSI MAG CORELIQUID A15 360, subject to final case-clearance validation.  
+**Reason:** This replaces the earlier proposed air-cooling direction.
 
+## ADR-006: Select the MSI MAG B850 Tomahawk MAX WiFi
+
+**Status:** Purchased / owned — arrived  
+**Decision:** The Cerberus motherboard is the MSI MAG B850 Tomahawk MAX WiFi.  
+**Reason:** The exact owned board can now be inspected and its manual used to validate PCIe slot allocation, physical spacing, headers, and resource sharing.
+
+## ADR-007: Re-select the primary GPU model
+
+**Status:** In progress  
+**Decision:** Preserve the RTX 5060 Ti 16 GB requirement while selecting a replacement model.  
+**Reason:** The original MSI Ventus model became unavailable. No exact replacement is final yet.
+
+## ADR-008: Keep Version 1 separate from Cerberus
+
+**Status:** Accepted  
+**Decision:** Version 1 remains the existing Windows 10 dual-monitor baseline. The Cerberus rebuild is the planned future physical workstation.  
+**Reason:** Separating current-state documentation from future-build decisions prevents planned hardware from being mistaken for installed hardware.
