@@ -24,7 +24,7 @@ Cerberus is a physical workstation rebuild targeting:
 
 ### Acquired foundation
 
-- MUSETEX K2 case — owned
+- MUSETEX K2 case — owned and arrived
 - MSI MAG B850 Tomahawk MAX WiFi — owned and arrived
 
 ### Current selections still requiring purchase or final validation
