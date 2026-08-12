@@ -47,3 +47,9 @@
 **Status:** Accepted  
 **Decision:** Version 1 remains the existing Windows 10 dual-monitor baseline. The Cerberus rebuild is the planned future physical workstation.  
 **Reason:** Separating current-state documentation from future-build decisions prevents planned hardware from being mistaken for installed hardware.
+
+## ADR-009: Build Cerberus instead of buying a prebuilt workstation
+
+**Status:** Accepted  
+**Decision:** Build the Cerberus workstation from individually selected components rather than purchase a complete prebuilt system.  
+**Reason:** It was too difficult to find a purchasable system that combined the required virtualization performance, 64 GB memory direction, NVIDIA compute and encoding, six-monitor dual-GPU layout, usable PCIe expansion, cooling, power quality, and upgrade flexibility without unacceptable compromises. A custom build provides control over the exact motherboard, slot layout, clearances, cooling, power supply, and future expansion.
