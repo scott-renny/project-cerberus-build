@@ -6,7 +6,7 @@ This log covers the future physical Cerberus rebuild. Version 1 remains the exis
 
 | Component | Status | Evidence / notes |
 |---|---|---|
-| MUSETEX K2 case | Owned | Existing case for the Cerberus build |
+| MUSETEX K2 case | **Owned — arrived** | Arrival confirmed; inspect the chassis and retain all included hardware |
 | MSI MAG B850 Tomahawk MAX WiFi | **Owned — arrived** | Arrival confirmed; add sanitized photo link when the image file is available |
 
 Do not publish serial numbers, shipping labels, addresses, order numbers, or other identifying information in photos.
