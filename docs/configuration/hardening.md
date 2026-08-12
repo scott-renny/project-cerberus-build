@@ -9,7 +9,8 @@
 - [ ] Review Windows Security, firewall, reputation protection, and exploit protection.
 - [ ] Disable unnecessary services, sharing, and remote access.
 - [ ] Configure tested backups before creating irreplaceable lab data.
-- [ ] Separate untrusted lab activity with appropriate virtualization and network isolation.
+- [ ] Keep specialized or untrusted workloads on appropriately isolated infrastructure, including Project Ares where that role applies.
+- [ ] If a local VM is used on Cerberus, apply suitable virtualization and network isolation.
 
 This page documents the approach, not live policies, keys, addresses, or sensitive configuration exports.
 
