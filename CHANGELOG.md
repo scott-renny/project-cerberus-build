@@ -16,6 +16,9 @@ All notable changes to Project Cerberus Build are recorded here.
 
 ### Changed
 
+- Cerberus is now defined as the primary cybersecurity workstation and six-display command center, not the primary VM host.
+- Project Ares is documented as a separate physical system for specialized, isolated, or infrastructure workloads.
+- Virtualization on Cerberus is now optional capability rather than a headline requirement.
 - Core budget revised to a preliminary CA$3,000+ before tax, excluding the case; the final ceiling remains TBD.
 - The original CA$2,000–2,200 budget is retained only as a superseded historical target.
 - MUSETEX K2 case is now recorded as purchased, owned, and arrived.
