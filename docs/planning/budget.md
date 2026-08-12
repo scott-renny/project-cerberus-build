@@ -3,13 +3,13 @@
 ## Target
 
 - **Core budget:** CA$2,000–2,200 before tax
-- **Case:** owned and excluded
+- **Case:** owned, arrived, and excluded
 - **Motherboard:** owned; record actual cost when available
 - **Contingency:** track separately for cables, adapters, and unexpected compatibility needs
 
 | Category | Current selection / requirement | Budgeted | Actual | Status |
 |---|---|---:|---:|---|
-| Case | MUSETEX K2 | Excluded | TBD | Owned |
+| Case | MUSETEX K2 | Excluded | TBD | Owned — arrived |
 | CPU | AMD Ryzen 9 9900X | TBD | — | Planned / locked direction |
 | Cooling | MSI MAG CORELIQUID A15 360 | TBD | — | Current choice |
 | Motherboard | MSI MAG B850 Tomahawk MAX WiFi | TBD | TBD | Owned — arrived |
