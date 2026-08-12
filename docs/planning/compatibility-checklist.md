@@ -1,34 +1,44 @@
 # Compatibility Checklist
 
-Complete this checklist using the exact manufacturer model numbers before ordering.
+Complete this checklist using exact manufacturer model numbers before ordering.
+
+## Owned foundation
+
+- [x] MUSETEX K2 case is owned.
+- [x] MSI MAG B850 Tomahawk MAX WiFi motherboard is owned and has arrived.
+- [ ] Inspect the motherboard and retain all packaging and accessories.
+- [ ] Record a sanitized arrival photo in the build log when the image is available.
 
 ## Case and cooling
 
-- [ ] CPU cooler height is within the case limit.
-- [ ] Cooler does not obstruct memory or the primary PCIe slot.
-- [ ] Primary GPU length, height, and thickness fit the case.
+- [ ] MSI MAG CORELIQUID A15 360 radiator and fans fit the intended mount.
+- [ ] Cooler, tubing, and cables do not obstruct memory or the primary PCIe slot.
+- [ ] Exact RTX 5060 Ti 16 GB card dimensions fit the case.
 - [ ] Secondary GPU fits with adequate intake airflow.
-- [ ] Case fan orientation provides a clear front/bottom-to-top/rear path.
+- [ ] Case fan orientation provides a clear airflow path.
 
 ## Motherboard and expansion
 
-- [ ] BIOS supports the Ryzen 9 9900X or provides BIOS Flashback.
-- [ ] Second full-length slot is usable with the selected primary GPU thickness.
-- [ ] Second slot supplies sufficient electrical lanes for the Arc A310.
-- [ ] Installing both GPUs does not disable a required M.2 slot or port.
-- [ ] Front-panel USB and audio headers match the case connectors.
+- [ ] Confirm BIOS support for the Ryzen 9 9900X and BIOS Flashback procedure.
+- [ ] Map the exact MSI MAG B850 Tomahawk MAX WiFi PCIe slots and electrical lanes.
+- [ ] Confirm the lower slot remains accessible with the selected primary GPU thickness.
+- [ ] Confirm the secondary display GPU receives sufficient lanes and clearance.
+- [ ] Determine whether a USB expansion card can coexist with both GPUs.
+- [ ] Confirm whether any PCIe choice shares resources with a required M.2 slot or port.
+- [ ] Confirm front-panel USB, audio, pump, fan, and case connectors.
+- [ ] Select a slot-mounted anti-sag bracket only if required; avoid blocking the secondary GPU.
 
 ## Power
 
-- [ ] PSU meets the primary GPU manufacturer's recommendation.
-- [ ] PSU provides every required connector without unsafe splitters.
-- [ ] Estimated sustained load leaves reasonable headroom.
-- [ ] PSU dimensions and cable routing fit the dual-chamber case.
+- [ ] Confirm the Corsair RM850e (2025) meets the final GPU recommendation.
+- [ ] Confirm every required connector without unsafe splitters.
+- [ ] Estimate sustained and transient load with reasonable headroom.
+- [ ] Confirm PSU dimensions and cable routing in the case.
+- [ ] Confirm the CyberPower CP1500PFCLCD load and desired runtime after assembly.
 
 ## Displays
 
-- [ ] Each monitor's resolution, refresh rate, and input ports are recorded.
-- [ ] Exact GPU models provide six compatible physical outputs in total.
-- [ ] Required cable standards and lengths are documented.
-- [ ] Portable monitors have a separate power plan where required.
-
+- [ ] Record each monitor’s resolution, refresh rate, and inputs.
+- [ ] Confirm the exact two GPU models provide six compatible physical outputs in total.
+- [ ] Document required cable standards and lengths.
+- [ ] Provide separate power for portable monitors where required.
