@@ -2,8 +2,13 @@
 
 ## Current position
 
-The original CA$2,000–2,200 core target is retained as a historical planning target and requires a full revision as exact selections and purchase costs are added.
+The preliminary core budget is now **CA$3,000 or more before tax**, excluding the case. This is a working floor, not a hard ceiling. The final target will be set after the remaining exact models, taxes, shipping, and contingency are priced.
 
+The original CA$2,000–2,200 core target is retained only as a superseded historical planning target.
+
+- **Preliminary core target:** CA$3,000+ before tax, excluding the case
+- **Final ceiling:** TBD
+- **Superseded target:** CA$2,000–2,200 before tax, excluding the case
 - **Currency:** Canadian dollars
 - **Recorded prices:** pre-tax amounts shown in the supplied purchase/listing screenshots
 - **Case:** owned, arrived, tracked in total project spend, but excluded from the original core target
@@ -28,7 +33,7 @@ The original CA$2,000–2,200 core target is retained as a historical planning t
 
 | Measure | Amount |
 |---|---:|
-| Acquired core components counted toward original target | **CA$294.99** |
+| Acquired core components counted toward current target | **CA$294.99** |
 | Acquired case excluded from original target | **CA$89.99** |
 | **Total recorded acquired hardware** | **CA$384.98** |
 | Taxes and shipping recorded | **TBD** |
