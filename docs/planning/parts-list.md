@@ -1,20 +1,22 @@
 # Parts List
 
-Prices are recorded in Canadian dollars and should be updated immediately before purchase. “Current choice” records the active direction; only “Owned” confirms acquisition.
+Prices are recorded in Canadian dollars. “Current choice” records the active direction; only “Owned” confirms acquisition.
 
-| Component | Selection | Status | Notes |
-|---|---|---|---|
-| Case | MUSETEX K2 | **Owned — arrived** | Physical case is on hand for the Cerberus build |
-| CPU | AMD Ryzen 9 9900X | Planned / locked direction | 12 cores / 24 threads |
-| Cooler | MSI MAG CORELIQUID A15 360 | Current choice | Verify radiator, fan, RAM, and cable clearance |
-| Motherboard | MSI MAG B850 Tomahawk MAX WiFi | **Owned — arrived** | Exact board now available for slot and header validation |
-| Memory | 64 GB (2x32 GB) DDR5-6000 EXPO | Selecting | Prefer a validated two-DIMM kit |
-| SSD | 2 TB PCIe 4.0 NVMe | Planned | Exact model not yet recorded |
-| Primary GPU | RTX 5060 Ti 16 GB | Required; exact model selecting | Original MSI Ventus model became unavailable |
-| Secondary GPU | Low-power display GPU | Selecting | Must coexist physically and electrically with primary GPU |
-| Power supply | Corsair RM850e (2025) | Current choice | Confirm final connector and load requirements |
-| UPS | CyberPower CP1500PFCLCD, 1500 VA / 1000 W | Current choice | Confirm runtime after measuring final system load |
-| USB expansion | Model not selected | Optional / validating | Validate usable slot after both GPUs are mapped |
+| Component | Selection | Status | Recorded price | Notes |
+|---|---|---|---:|---|
+| Case | MUSETEX K2 | **Owned — arrived** | **CA$89.99** | Purchased July 5, 2026; case is on hand |
+| CPU | AMD Ryzen 9 9900X | Planned / locked direction | — | 12 cores / 24 threads |
+| Cooler | MSI MAG CORELIQUID A15 360 | Current choice | — | Verify radiator, fan, RAM, and cable clearance |
+| Motherboard | MSI MAG B850 Tomahawk MAX WiFi | **Owned — arrived** | **CA$294.99** | Exact board available for slot and header validation |
+| Memory | 64 GB (2x32 GB) DDR5-6000 EXPO | Selecting | — | Prefer a validated two-DIMM kit |
+| SSD | 2 TB PCIe 4.0 NVMe | Planned | — | Exact model not yet recorded |
+| Primary GPU | RTX 5060 Ti 16 GB | Required; exact model selecting | — | Original MSI Ventus model became unavailable |
+| Secondary GPU | Low-power display GPU | Selecting | — | Must coexist physically and electrically with primary GPU |
+| Power supply | Corsair RM850e (2025) | Current choice | — | Confirm final connector and load requirements |
+| UPS | CyberPower CP1500PFCLCD, 1500 VA / 1000 W | Current choice | — | Confirm runtime after measuring final system load |
+| USB expansion | Model not selected | Optional / validating | — | Validate usable slot after both GPUs are mapped |
+
+The two recorded screenshot prices total **CA$384.98 before unrecorded tax and shipping**. The case remains excluded from the original core-budget target but is included in total project spending.
 
 ## Motherboard validation now possible
 
