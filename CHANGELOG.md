@@ -6,6 +6,7 @@ All notable changes to Project Cerberus Build are recorded here.
 
 ### Added
 
+- Project rationale explaining why a custom build was chosen over an off-the-shelf workstation.
 - Version history distinguishing the existing Version 1 Windows 10 dual-monitor baseline from the future Cerberus rebuild.
 - Milestone tracking for planning, acquisition, assembly, configuration, and validation.
 - Motherboard-arrival record and PCIe/expansion validation tasks.
