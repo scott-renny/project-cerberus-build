@@ -4,7 +4,7 @@ Prices are recorded in Canadian dollars and should be updated immediately before
 
 | Component | Selection | Status | Notes |
 |---|---|---|---|
-| Case | MUSETEX K2 | **Owned** | Reused for the physical Cerberus build |
+| Case | MUSETEX K2 | **Owned — arrived** | Physical case is on hand for the Cerberus build |
 | CPU | AMD Ryzen 9 9900X | Planned / locked direction | 12 cores / 24 threads |
 | Cooler | MSI MAG CORELIQUID A15 360 | Current choice | Verify radiator, fan, RAM, and cable clearance |
 | Motherboard | MSI MAG B850 Tomahawk MAX WiFi | **Owned — arrived** | Exact board now available for slot and header validation |
