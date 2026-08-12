@@ -10,9 +10,12 @@ All notable changes to Project Cerberus Build are recorded here.
 - Milestone tracking for planning, acquisition, assembly, configuration, and validation.
 - Motherboard-arrival record and PCIe/expansion validation tasks.
 - Build-log placeholder for a sanitized motherboard arrival photo when the image asset becomes available.
+- Screenshot-supported budget entries of CA$294.99 for the motherboard and CA$89.99 for the case.
+- Recorded acquired-hardware subtotal of CA$384.98 before unrecorded taxes and shipping.
 
 ### Changed
 
+- The original CA$2,000–2,200 budget is now identified as a historical planning target requiring full revision.
 - MUSETEX K2 case is now recorded as purchased, owned, and arrived.
 - MSI MAG B850 Tomahawk MAX WiFi is now recorded as purchased, owned, and arrived.
 - Cooler direction updated to MSI MAG CORELIQUID A15 360.
