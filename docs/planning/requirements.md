@@ -4,7 +4,9 @@
 
 - Preserve Version 1 as the existing Windows 10 dual-monitor operational baseline.
 - Treat Cerberus as a separate, future physical workstation rebuild.
-- Treat Project Ares as a separate physical system for specialized, isolated, or infrastructure workloads.
+- After Cerberus is validated and takes over primary workstation duties, repurpose the retired Version 1 Windows 10 system as Ares V1.
+- Treat Ares V1 as a separate physical system for specialized, isolated, or infrastructure workloads.
+- Do not assume Ares V1 will retain Windows 10; its operating system and final configuration require a separate decision.
 - Do not describe planned or merely selected Cerberus hardware as installed.
 
 ## Functional requirements for the Cerberus rebuild
