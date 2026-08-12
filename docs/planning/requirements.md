@@ -20,7 +20,7 @@
 
 - Use the owned, arrived MUSETEX K2 case.
 - Use the owned, arrived MSI MAG B850 Tomahawk MAX WiFi motherboard.
-- Target CA$2,000–2,200 before tax, excluding the case.
+- Use a preliminary core budget of CA$3,000 or more before tax, excluding the case; set the final ceiling after exact parts and contingency are priced.
 - Retain the AMD Ryzen 9 9900X direction.
 - Use 64 GB (2x32 GB) DDR5-6000 EXPO memory; exact kit selecting.
 - Require an RTX 5060 Ti with 16 GB VRAM; exact replacement model selecting.
