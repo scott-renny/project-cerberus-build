@@ -59,3 +59,9 @@
 **Status:** Accepted  
 **Decision:** Use Cerberus as the primary cybersecurity workstation and command center. Develop Project Ares as a separate physical system for specialized, isolated, or infrastructure workloads.  
 **Reason:** Separating these roles keeps Cerberus focused on interactive workstation work and avoids presenting it as the primary virtualization host. Cerberus may still support occasional local VMs, WSL, or containers when useful.
+
+## ADR-011: Repurpose the retired Windows 10 workstation as Ares V1
+
+**Status:** Accepted direction  
+**Decision:** After Cerberus is validated and becomes the primary workstation, retire the existing Version 1 Windows 10 system from that role and repurpose its hardware as Ares V1.  
+**Reason:** Reusing the existing system gives Ares a physical platform without purchasing an entirely new machine, extends the useful life of the hardware, and preserves the separation between Cerberus interactive workloads and Ares specialized or isolated workloads. The Ares operating system, final responsibilities, and upgrade needs remain separate decisions.
