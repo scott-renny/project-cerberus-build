@@ -8,7 +8,8 @@
 | GPU | Primary GPU stress test | Stable; no artifacts or driver reset | Pending |
 | Dual GPU | Six-display mixed workload | All displays remain active | Pending |
 | Storage | Health and performance test | Healthy SMART data; expected range | Pending |
-| Virtualization | Concurrent VM workload | Stable and responsive | Pending |
+| WSL/containers | Representative development or security workload | Stable and responsive | Pending |
+| Optional virtualization | Single representative local VM, if configured | Starts and operates correctly | Pending |
 | Streaming | OBS capture/encode session | No encoder overload or dropped frames | Pending |
 | Sleep/wake | Repeated cycles | Display layout and devices recover | Pending |
 | Combined | CPU, GPU, storage, and displays | No crash, throttle concern, or error | Pending |
