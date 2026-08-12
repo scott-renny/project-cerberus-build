@@ -22,7 +22,7 @@ The future Cerberus rebuild is a separate physical workstation build now in plan
 
 | Component | Selection | Status |
 |---|---|---|
-| Case | MUSETEX K2 | **Owned** |
+| Case | MUSETEX K2 | **Owned — arrived** |
 | Motherboard | MSI MAG B850 Tomahawk MAX WiFi | **Owned — arrived** |
 | CPU | AMD Ryzen 9 9900X | Planned / locked direction |
 | Cooler | MSI MAG CORELIQUID A15 360 | Current choice |
