@@ -8,7 +8,7 @@
 
 ## Cerberus planning and acquisition
 
-- [x] MUSETEX K2 case acquired.
+- [x] MUSETEX K2 case purchased, received, and recorded as owned.
 - [x] MSI MAG B850 Tomahawk MAX WiFi selected.
 - [x] MSI MAG B850 Tomahawk MAX WiFi purchased, received, and recorded as owned.
 - [ ] Add a sanitized motherboard arrival photo when the source image is available.
