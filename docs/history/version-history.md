@@ -20,7 +20,7 @@ Cerberus is a physical workstation rebuild targeting:
 - RTX 5060 Ti 16 GB primary graphics
 - a small, low-power secondary display GPU
 - six directly connected displays
-- virtualization, cybersecurity, development, streaming, and expansion workloads
+- cybersecurity operations, development, AI experimentation, content creation, streaming, and expansion workloads
 
 ### Acquired foundation
 
@@ -35,5 +35,9 @@ Cerberus is a physical workstation rebuild targeting:
 - 64 GB DDR5-6000 EXPO kit — selecting
 - Corsair RM850e (2025) — current PSU choice
 - CyberPower CP1500PFCLCD — current UPS choice
+
+### System boundary
+
+Cerberus will be the primary workstation and command center. Project Ares will be a separate physical system for specialized, isolated, or infrastructure workloads. Local virtualization on Cerberus is optional rather than a primary design objective.
 
 The future rebuild becomes a new operational version only after assembly and validation are complete.
