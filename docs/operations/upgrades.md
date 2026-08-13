@@ -1,27 +1,35 @@
-# Upgrade Roadmap
+# Platform Evolution Roadmap
 
-Upgrades are need-driven rather than date-driven. This roadmap applies after the future Cerberus rebuild is operational; Version 1 remains the existing Windows 10 dual-monitor baseline.
+Changes are driven by measured need and compatibility, not novelty.
 
 ## Storage
 
-Add a second 2 TB or 4 TB NVMe SSD when free space, VM activity, or project separation justifies it. Confirm lane and port sharing on the owned MSI MAG B850 Tomahawk MAX WiFi before installation.
+Add NVMe storage when capacity, project separation, AI data, containers, or disposable VM use justifies it. Preserve documented PCIe/M.2 lane allocation and avoid M2_3 if it reduces required secondary-GPU bandwidth.
 
 ## Memory
 
-Consider 128 GB only when measured VM and container workloads regularly approach the planned 64 GB. Four-DIMM operation may require a lower memory speed.
+Consider 128 GB only when measured engineering, container, AI, or optional VM workloads regularly approach 64 GB. Four-DIMM operation may require lower memory speed.
+
+## Graphics and displays
+
+Replace the primary GPU only when measured CUDA, AI, encoding, creative, or display needs exceed the RTX 5060 Ti 16 GB. Preserve the compact secondary-display strategy unless a simpler supported solution can reliably drive all six displays.
 
 ## Networking
 
-Consider faster-than-2.5 Gb Ethernet only when the switch, server, cabling, and actual transfer workloads can benefit.
+Use the onboard 2.5 Gb Ethernet initially. Upgrade only when Olympus, switching, cabling, servers, and actual transfers benefit.
 
-## Graphics
+## Expansion
 
-Select the initial RTX 5060 Ti 16 GB model and secondary display GPU only after physical and electrical slot validation. After the build is operational, replace the primary GPU only when measured gaming, AI, encoding, or editing requirements exceed it. Preserve the auxiliary display strategy unless a simpler single-card solution can drive all required displays.
+Add USB or capture expansion only after proving physical slot access, lane allocation, Fedora support, and power requirements.
 
-## Expansion cards
+## Fedora lifecycle
 
-Add a USB expansion card only if the final primary and secondary GPU layout leaves a suitable accessible slot with acceptable lane allocation.
+Track supported Fedora releases, kernel/NVIDIA compatibility, configuration changes, recovery procedures, and upgrade validation. Test major platform upgrades before treating them as accepted.
+
+## Automation maturity
+
+Gradually move repeatable authorized infrastructure work into Git, Ansible, and IaC. Avoid automating poorly understood processes or committing secrets.
 
 ## Power protection
 
-The CyberPower CP1500PFCLCD 1500 VA / 1000 W is the current UPS choice. Confirm load percentage, desired runtime, USB monitoring, and graceful-shutdown behavior using measured final-system power before treating it as validated.
+Validate the CP1500PFCLCD using measured load, USB monitoring, desired runtime, and controlled-shutdown testing. Give always-on infrastructure separate protection rather than overloading the Cerberus UPS.
