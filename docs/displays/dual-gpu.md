@@ -1,33 +1,51 @@
-# Dual-GPU Configuration
+# Fedora Dual-GPU Configuration
 
-## Intended roles
+## Locked architecture
 
-- **NVIDIA RTX 5060 Ti 16 GB:** primary desktop, high-resolution displays, OBS encoding, CUDA, AI, editing, and gaming. The exact replacement model is still being selected because the original MSI Ventus model became unavailable.
-- **Secondary display GPU:** auxiliary displays only unless a later workload is deliberately assigned to it. The exact small, low-power model is still being selected.
+- **Primary:** NVIDIA RTX 5060 Ti 16 GB. Exact reputable model remains open.
+- **Secondary:** compact low-power NVIDIA workstation/display GPU. T400 preferred; P620 fallback.
 
-## Hardware validation before purchase
+Both cards remain in one NVIDIA Linux driver ecosystem.
 
-Use the owned MSI MAG B850 Tomahawk MAX WiFi to confirm:
+## Roles
 
-- which lower slot remains physically accessible with the selected primary GPU;
-- the electrical lane allocation of that slot;
-- whether any M.2 or port sharing affects the intended configuration;
-- whether an optional USB expansion card can coexist;
-- whether a slot-mounted anti-sag bracket is needed without obstructing the secondary GPU.
+### RTX 5060 Ti 16 GB
 
-Do not assume Intel Arc A310 or any other specific secondary card is final until this validation is complete.
+- Primary KDE desktop displays
+- CUDA and local AI experimentation
+- GPU-accelerated creative/development work
+- NVENC for OBS
+- High-resolution/high-refresh outputs
 
-## Setup checklist
+### T400/P620-class secondary
 
-- [ ] Install current AMD chipset drivers.
-- [ ] Install the NVIDIA driver from the official source.
-- [ ] Install the secondary GPU driver from its official source.
-- [ ] Confirm both adapters appear without errors in Device Manager.
-- [ ] Connect and identify one display at a time.
-- [ ] Set resolution, refresh rate, scaling, orientation, and primary display.
-- [ ] Assign performance-sensitive applications to the NVIDIA GPU in Windows graphics settings.
-- [ ] Verify OBS uses the NVIDIA encoder.
-- [ ] Reboot and confirm the layout persists.
-- [ ] Test sleep, wake, driver updates, and mixed refresh rates.
+- Auxiliary displays only
+- Minimal slot width and power
+- Preserve lower-case airflow
+- No default GPU passthrough plan
 
-Document exact GPU models and driver versions when a stable configuration is established.
+## Motherboard and storage validation
+
+Use the owned MSI MAG B850 Tomahawk MAX WiFi and current manual to confirm:
+
+- primary GPU in the CPU-connected primary slot;
+- lower-slot physical clearance and chipset lane allocation;
+- M2_3 sharing behavior and whether it must remain unused;
+- primary SSD placement in a non-conflicting M.2 slot;
+- optional USB expansion only after both GPUs are mapped;
+- slot-mounted anti-sag support only if it does not obstruct the secondary card.
+
+## Fedora deployment checklist
+
+- [ ] Install the supported Fedora NVIDIA driver path deliberately.
+- [ ] Document Secure Boot handling for third-party NVIDIA modules.
+- [ ] Confirm both GPUs appear in Linux hardware and NVIDIA tooling.
+- [ ] Confirm KDE detects every display.
+- [ ] Configure resolution, refresh, scaling, orientation, and primary output.
+- [ ] Confirm CUDA on the primary GPU.
+- [ ] Confirm OBS NVENC.
+- [ ] Validate reboot, logout/login, kernel/driver update, and sleep/wake.
+- [ ] Validate mixed-refresh and mixed-scaling behavior.
+- [ ] Preserve a text-console recovery procedure if the graphical stack fails.
+
+Do not describe the secondary GPU as Intel or AMD. Do not purchase it until exact outputs, adapters, slot clearance, and price are verified.
