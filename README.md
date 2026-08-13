@@ -1,103 +1,131 @@
-# Project Cerberus Build
+# Project Cerberus
 
-[![Project status: Planning](https://img.shields.io/badge/status-planning-f0ad4e)](docs/planning/requirements.md)
+[![Status: Planning and acquisition](https://img.shields.io/badge/status-planning%20%26%20acquisition-f0ad4e)](docs/planning/milestones.md)
+[![Platform: Fedora KDE](https://img.shields.io/badge/platform-Fedora%20KDE-51A2DA?logo=fedora&logoColor=white)](docs/platform/architecture.md)
+[![Hardware: Two components arrived](https://img.shields.io/badge/hardware-2%20components%20arrived-success)](docs/planning/parts-list.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Documentation](https://img.shields.io/badge/documentation-in%20progress-6f42c1)](docs/planning/parts-list.md)
 
-Designing, building, and documenting Cerberus: a physical dual-GPU cybersecurity workstation for operations, development, AI experimentation, content creation, and a six-monitor command center.
+Project Cerberus is the design, construction, deployment, hardening, and ongoing development of a purpose-built Fedora KDE Linux engineering workstation and Cyber Operations Center command platform.
 
-> **Status:** Planning and component acquisition  
-> **Documentation version:** 0.2.0  
-> **Current operational baseline:** Version 1 — existing Windows 10 dual-monitor workstation  
-> **Future build:** Cerberus rebuild  
-> **Preliminary core budget:** CA$3,000+, excluding the case; final ceiling TBD
+> **Status:** Platform design, hardware acquisition, and deployment planning  
+> **Current baseline:** Existing Windows 10 dual-monitor workstation  
+> **Successor platform:** Cerberus on Fedora KDE Plasma  
+> **Preliminary core budget:** CA$3,000+ before tax, excluding the case; final ceiling TBD
 
-## Version scope
+## More than a system build
 
-Version 1 is the existing Windows 10 dual-monitor workstation and remains the operational baseline. It is not the Cerberus rebuild.
+Cerberus began as an attempt to buy a workstation with the right performance, display capacity, expansion, cooling, power quality, and upgrade path. Suitable prebuilt systems required too many compromises, so the workstation became a custom build.
 
-The future Cerberus rebuild is a separate physical workstation build now in planning and component acquisition. Its target is Windows 11 Pro, two GPUs, and six directly connected displays. See [Version History](docs/history/version-history.md).
+The decision to replace Windows with Fedora KDE expanded Cerberus beyond hardware. It now includes:
 
-## Why build it
+- Hardware architecture, acquisition, assembly, firmware, and validation
+- Fedora KDE installation, security hardening, recovery, and lifecycle management
+- A six-display, dual-NVIDIA-GPU command environment
+- Desktop and workflow engineering previously planned as Project Hydra
+- Linux development, Podman, Distrobox, and optional disposable KVM/QEMU virtual machines
+- Git, GitHub, Python, Ansible, OpenTofu/Terraform, AWS, and Kubernetes tooling
+- Ansible/IaC control-node duties for the wider environment
+- COC access and management for Atlas, Hestia, Ares, Olympus, Kubernetes, Wazuh, Grafana, UniFi, and related systems
+- Athena integration groundwork
+- OBS and streaming as the final deployment phase
 
-Cerberus became a custom build because it was too difficult to buy a complete off-the-shelf system that provided everything required in one machine. The project needs a specific balance of strong concurrent-workload performance, 64 GB of fast memory, NVIDIA encoding and compute, direct support for six monitors through two GPUs, usable PCIe expansion, strong cooling, reliable power, and a clear upgrade path.
+Cerberus is an interactive operator and engineering platform. Permanent services and specialized isolated workloads remain on dedicated systems.
 
-Prebuilt systems generally forced compromises in one or more of those areas and offered less control over exact motherboard layout, GPU clearance, power-supply quality, cooling, and future expansion. Building Cerberus component by component makes those constraints explicit and allows every part to be selected and validated against the real workload.
+## Locked platform direction
 
-## Confirmed hardware status
+| Area | Decision | State |
+|---|---|---|
+| Host operating system | **Fedora KDE Plasma** | **Locked** |
+| Platform role | Linux engineering workstation and COC control node | **Locked** |
+| Desktop scope | Six-display KDE workflow environment | **Consolidated from Hydra** |
+| Automation | Ansible/IaC, shell tooling, Git-managed configuration | **Locked direction** |
+| Containers | Podman, Podman Desktop, and Distrobox | **Locked direction** |
+| Local virtualization | KVM/QEMU and virt-manager when a real temporary use case exists | Optional |
+| Streaming | OBS and PS5 capture workflow | Final deployment phase |
+| Windows laptop automation | Project Hermes | Separate project |
+| Specialized system | Ares V1, repurposed from the retired Windows 10 workstation | Separate project |
 
-| Component | Selection | Status |
+## Hardware decision matrix
+
+“Locked” means the design decision is settled; it does not mean purchased. Only items marked owned have been acquired.
+
+| Component | Locked selection or specification | Acquisition state |
 |---|---|---|
 | Case | MUSETEX K2 | **Owned — arrived** |
 | Motherboard | MSI MAG B850 Tomahawk MAX WiFi | **Owned — arrived** |
-| CPU | AMD Ryzen 9 9900X | Planned / locked direction |
-| Cooler | MSI MAG CORELIQUID A15 360 | Current choice |
-| Memory | 64 GB (2x32 GB) DDR5-6000 EXPO | Selecting |
-| Storage | 2 TB PCIe 4.0 NVMe SSD | Planned |
-| Primary GPU | NVIDIA GeForce RTX 5060 Ti 16 GB | Required; exact replacement model selecting |
-| Secondary GPU | Low-power display GPU | Selecting |
-| Power supply | Corsair RM850e (2025) | Current choice |
-| UPS | CyberPower CP1500PFCLCD, 1500 VA / 1000 W | Current choice |
+| CPU | AMD Ryzen 9 9900X | Locked; purchase pending |
+| Cooler | MSI MAG CORELIQUID A15 360 | Locked; purchase pending; clearance validation required |
+| Memory | 64 GB (2x32 GB) DDR5-6000 EXPO | Specification locked; exact kit selecting |
+| Primary storage | 2 TB M.2 NVMe SSD | Specification locked; exact model selecting |
+| Primary GPU | NVIDIA GeForce RTX 5060 Ti 16 GB | Specification locked; exact manufacturer/model selecting |
+| Secondary GPU | Compact, low-power NVIDIA display GPU | Direction locked; NVIDIA T400 preferred, P620 fallback |
+| Power supply | Corsair RM850e (2025), 850 W | Locked; purchase pending |
+| UPS | CyberPower CP1500PFCLCD, 1500 VA / 1000 W | Locked; purchase pending |
+| USB expansion | Add only if final PCIe layout permits | Optional |
 
-The original MSI Ventus RTX 5060 Ti model became unavailable, so it must not be treated as the selected card. The replacement must still provide 16 GB VRAM and fit the final dual-GPU layout.
+The original MSI Ventus RTX 5060 Ti became unavailable at a sensible price. The locked requirement is therefore the GPU class and 16 GB VRAM, not that exact cooler or manufacturer.
 
-Because the exact motherboard is now owned, its physical slot spacing and documented lane allocation can be used to validate coexistence of the primary GPU, secondary display GPU, and any USB expansion card before those cards are purchased.
+## PCIe and storage strategy
 
-## Relationship to Project Ares
+The owned motherboard enables validation against the real board and manual:
 
-Cerberus will become the primary workstation and command center. When Cerberus is validated and takes over that role, the current Version 1 Windows 10 workstation will be retired from primary workstation duty and repurposed as **Ares V1**.
+- Primary RTX 5060 Ti in the CPU-connected primary slot
+- Compact secondary NVIDIA display GPU in the usable lower slot
+- M2_3 left unused if required to preserve lower-slot bandwidth
+- Primary Fedora SSD placed in a non-conflicting M.2 slot
+- USB expansion card added only if both GPUs leave a suitable slot
+- Slot-mounted GPU support considered only after the final card dimensions are known
 
-Ares V1 will therefore reuse the existing system rather than require an entirely new machine. It will become a separate physical system for specialized, isolated, or infrastructure workloads. Cerberus may retain optional local virtualization capability for occasional testing, but it is not being designed as the primary VM host.
+## Project consolidation
 
-Specific models and current pricing are tracked in [Parts List](docs/planning/parts-list.md) and [Budget](docs/planning/budget.md). A current choice is not purchased unless explicitly marked owned.
+Project Hydra is discontinued as a standalone project. Its planned multi-monitor responsibilities now form Cerberus's **Desktop & Workflow Environment** workstream.
 
-## Purpose
+Project Hermes remains separate for the Windows 11 laptop. Its Windows/PowerShell implementation is not being ported wholesale into Fedora, although its repeatability, validation, recovery, and documentation principles inform Cerberus.
 
-Project Cerberus is designed to support:
+## System transition
 
-- Cybersecurity labs and blue-team workflows
-- Software development, WSL, containers, and technical research
-- AI experimentation and GPU-accelerated workloads
-- OBS capture and NVIDIA hardware encoding
-- Six directly connected displays across two GPUs
-- Straightforward storage and memory expansion
+The existing Windows 10 dual-monitor workstation remains operational until Cerberus is assembled, deployed, hardened, tested, and accepted. It will then be retired from primary-workstation duty and repurposed as **Ares V1**.
 
-## Design priorities
+## Deployment sequence
 
-1. Preserve the Ryzen 9 9900X and 64 GB memory direction while refining the preliminary CA$3,000+ core budget.
-2. Keep a secondary, low-power display GPU in the initial Cerberus build.
-3. Validate motherboard slot allocation and physical clearance before selecting expansion cards.
-4. Start with one 2 TB SSD and expand only when capacity requires it.
-5. Prefer wired 2.5 Gb Ethernet.
-6. Maintain safe airflow and slot clearance for both GPUs.
-7. Document decisions, testing, changes, and lessons learned.
+1. Hardware assembly and first POST
+2. BIOS/UEFI and firmware updates
+3. Baseline hardware and thermal validation
+4. Fedora KDE installation with encryption
+5. Updates, firmware, NVIDIA drivers, and six-display validation
+6. Security hardening
+7. Desktop & Workflow Environment
+8. Development and container toolchain
+9. COC, Ansible/IaC, Kubernetes, cloud, and infrastructure integration
+10. Optional compatibility and disposable-VM layer
+11. Athena integration groundwork
+12. Full testing, recovery validation, and documentation
+13. OBS and streaming configuration **last**
+14. Primary-workstation cutover and Ares V1 transition
 
 ## Documentation
 
+- [Platform Architecture](docs/platform/architecture.md)
 - [Requirements](docs/planning/requirements.md)
 - [Parts List](docs/planning/parts-list.md)
+- [Budget](docs/planning/budget.md)
 - [Milestones](docs/planning/milestones.md)
-- [Compatibility Checklist](docs/planning/compatibility-checklist.md)
 - [Decision Log](docs/planning/decision-log.md)
-- [Version History](docs/history/version-history.md)
+- [Compatibility Checklist](docs/planning/compatibility-checklist.md)
 - [Build Day](docs/build/build-day.md)
+- [Fedora Deployment](docs/configuration/fedora.md)
+- [BIOS Configuration](docs/configuration/bios.md)
+- [System Hardening](docs/configuration/hardening.md)
+- [Desktop & Workflow Environment](docs/platform/desktop-workflows.md)
+- [Automation & Control Node](docs/platform/automation-control-node.md)
 - [Display Plan](docs/displays/display-plan.md)
-- [Dual-GPU Setup](docs/displays/dual-gpu.md)
-- [Test Plan](docs/testing/test-plan.md)
-- [Upgrade Roadmap](docs/operations/upgrades.md)
-
-## Project phases
-
-- **Version 1 baseline:** existing Windows 10 dual-monitor system.
-- **Planning and acquisition:** select Cerberus parts, confirm compatibility, and record purchases.
-- **Assembly:** build the physical workstation and document installation details.
-- **Configuration:** update firmware, install Windows 11 and drivers, and configure both GPUs.
-- **Validation:** test memory, storage, thermals, stability, displays, GPU acceleration, and streaming.
-- **Operations:** record maintenance, firmware changes, and upgrades.
+- [Dual-GPU Configuration](docs/displays/dual-gpu.md)
+- [Validation Test Plan](docs/testing/test-plan.md)
+- [Version History](docs/history/version-history.md)
 
 ## Security and privacy
 
-This public repository must not contain credentials, product keys, serial numbers, public IP addresses, private network details, exported configuration secrets, or unsanitized screenshots. See [SECURITY.md](SECURITY.md).
+This public repository must not contain credentials, recovery keys, serial numbers, order numbers, public IP addresses, private network details, exported secrets, or unsanitized screenshots. See [SECURITY.md](SECURITY.md).
 
 ## License
 
