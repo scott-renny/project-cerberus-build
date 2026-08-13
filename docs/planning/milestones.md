@@ -1,37 +1,78 @@
 # Milestones
 
-## Version 1 baseline
+## 1. Architecture and consolidation
 
-- [x] Existing Windows 10 workstation remains operational.
-- [x] Existing dual-monitor configuration is documented as Version 1.
-- [x] Version 1 is separated from the future Cerberus rebuild.
+- [x] Define Cerberus as more than a hardware build.
+- [x] Lock Fedora KDE Plasma as the host operating system.
+- [x] Define Cerberus as the Linux engineering workstation and COC control node.
+- [x] Consolidate Project Hydra into Cerberus.
+- [x] Preserve Project Hermes for the Windows 11 laptop.
+- [x] Define the current Windows 10 system's future as Ares V1.
+- [x] Make streaming the final deployment phase.
 
-## Cerberus planning and acquisition
+## 2. Hardware decisions and acquisition
 
-- [x] MUSETEX K2 case purchased, received, and recorded as owned.
-- [x] MSI MAG B850 Tomahawk MAX WiFi selected.
-- [x] MSI MAG B850 Tomahawk MAX WiFi purchased, received, and recorded as owned.
-- [ ] Add a sanitized motherboard arrival photo when the source image is available.
-- [ ] Validate the exact motherboard PCIe lane and slot allocation.
-- [ ] Confirm physical clearance for the primary GPU, secondary GPU, and optional USB expansion card.
-- [ ] Select the exact RTX 5060 Ti 16 GB replacement model.
-- [ ] Select the secondary display GPU.
-- [ ] Select the 64 GB (2x32 GB) DDR5-6000 EXPO kit.
-- [ ] Confirm MSI MAG CORELIQUID A15 360 clearance.
-- [ ] Confirm Corsair RM850e (2025) power and connector suitability.
-- [ ] Confirm CyberPower CP1500PFCLCD runtime target.
+- [x] Lock the MUSETEX K2 case.
+- [x] Receive the MUSETEX K2.
+- [x] Lock the MSI MAG B850 Tomahawk MAX WiFi.
+- [x] Receive the motherboard.
+- [x] Lock the AMD Ryzen 9 9900X.
+- [x] Lock the MSI MAG CORELIQUID A15 360, subject to clearance.
+- [x] Lock 64 GB (2x32 GB) DDR5-6000 EXPO; exact kit remains open.
+- [x] Lock a 2 TB primary NVMe SSD; exact model remains open.
+- [x] Lock RTX 5060 Ti 16 GB as the primary GPU specification.
+- [x] Lock a compact NVIDIA secondary-GPU direction; T400 preferred, P620 fallback.
+- [x] Lock the Corsair RM850e (2025).
+- [x] Lock the CyberPower CP1500PFCLCD.
+- [ ] Purchase the remaining locked components.
+- [ ] Record tax-inclusive invoices and revise the final budget ceiling.
 
-## Assembly
+## 3. Compatibility validation
 
-- [ ] Bench-test CPU, cooler, memory, and NVMe on the motherboard.
-- [ ] Install the core system in the MUSETEX K2.
-- [ ] Install and support both GPUs without blocking required slots.
-- [ ] Complete cable management and first POST.
+- [ ] Inspect and inventory the arrived case and motherboard.
+- [ ] Add sanitized arrival photography.
+- [ ] Validate A15 360 radiator/tube clearance.
+- [ ] Select the exact primary GPU and confirm dimensions/outputs.
+- [ ] Validate PCIe slot allocation for both GPUs and optional USB expansion.
+- [ ] Confirm M.2 placement and lane-sharing behavior.
+- [ ] Confirm Mini DisplayPort adapters and six-display cable plan.
+- [ ] Confirm Linux compatibility for capture card, Stream Deck workflow, RGB, AIO, and peripherals.
 
-## Configuration and validation
+## 4. Assembly and firmware
 
-- [ ] Configure firmware and install Windows 11 Pro.
-- [ ] Install chipset and both GPU drivers.
+- [ ] Bench-build CPU, cooler, memory, and NVMe.
+- [ ] Complete first POST and baseline temperature inspection.
+- [ ] Update the MSI BIOS using M-FLASH.
+- [ ] Configure UEFI, Secure Boot strategy, TPM, SVM, EXPO after baseline testing, Resizable BAR, and fan curves.
+- [ ] Install hardware in the MUSETEX K2.
+- [ ] Install both GPUs without obstructing airflow or required slots.
+- [ ] Complete cable management and repeat cold-boot tests.
+
+## 5. Fedora foundation
+
+- [ ] Create and verify Fedora KDE installation media.
+- [ ] Install Fedora with encryption and documented storage layout.
+- [ ] Apply updates and firmware through supported Fedora mechanisms.
+- [ ] Install and validate NVIDIA drivers.
 - [ ] Validate all six displays.
-- [ ] Validate virtualization, OBS encoding, memory, storage, thermals, and stability.
-- [ ] Promote the validated Cerberus rebuild to the next operational version.
+- [ ] Configure backups and recovery media.
+
+## 6. Security and workstation platform
+
+- [ ] Validate SELinux enforcing and firewall policy.
+- [ ] Integrate the hardware security key where supported.
+- [ ] Build the Desktop & Workflow Environment.
+- [ ] Install Git, Python, Podman, Distrobox, and development tooling.
+- [ ] Configure Ansible/IaC control-node functions.
+- [ ] Configure Kubernetes, AWS, and COC management tooling.
+- [ ] Add optional local virtualization only if required.
+- [ ] Complete Athena integration groundwork.
+
+## 7. Validation, cutover, and streaming
+
+- [ ] Complete hardware, Fedora, security, workflow, COC, and recovery testing.
+- [ ] Document the accepted platform baseline.
+- [ ] Configure OBS and the PS5 streaming workflow last.
+- [ ] Promote Cerberus to primary workstation.
+- [ ] Retire the Windows 10 workstation from primary duty.
+- [ ] Hand the retired hardware to the Ares V1 project.
