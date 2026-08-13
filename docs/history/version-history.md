@@ -1,45 +1,63 @@
-# Version History
+# Version and Lifecycle History
 
-## Version 1 — Current operational baseline
+## Existing workstation — current operational baseline
 
-Version 1 is the existing workstation configuration:
+The current system remains in service until Cerberus is fully accepted:
 
 - Windows 10
 - Dual-monitor operation
-- Existing hardware, separate from the Cerberus parts plan
+- Existing hardware
+- Current primary workstation role
 
-Version 1 remains the usable baseline until the future Cerberus workstation is assembled, configured, tested, and accepted. Planned Cerberus parts must not be described as installed in Version 1.
+It is not Cerberus and must not be described as containing planned Cerberus hardware or Fedora configuration.
 
-After Cerberus takes over as the primary workstation, this Windows 10 system will be retired from its current role and repurposed as **Ares V1**. The hardware is being reused; Ares V1 is not currently planned as a completely new system purchase. Its operating system, final role, and any required upgrades will be documented separately before deployment.
+## Ares V1 — future repurposing
 
-## Future Cerberus rebuild — Planning and acquisition
+After Cerberus takes over, the current Windows 10 workstation will be retired from primary duty and its hardware will be repurposed as Ares V1. Ares will document its own operating system, upgrades, specialized role, and validation. Windows 10 is not assumed to remain installed.
 
-Cerberus is a physical workstation rebuild targeting:
+## Cerberus 0.x — platform design and acquisition
 
-- Windows 11 Pro
-- AMD Ryzen 9 9900X
-- 64 GB (2x32 GB) DDR5-6000 EXPO
-- RTX 5060 Ti 16 GB primary graphics
-- a small, low-power secondary display GPU
-- six directly connected displays
-- cybersecurity operations, development, AI experimentation, content creation, streaming, and expansion workloads
+Current Cerberus work includes:
+
+- custom hardware architecture and purchasing;
+- Fedora KDE platform design;
+- consolidation of Hydra's desktop/workflow scope;
+- Fedora-native automation and control-node planning;
+- six-display dual-GPU engineering;
+- hardening, recovery, COC, Kubernetes, cloud, and development planning.
 
 ### Acquired foundation
 
-- MUSETEX K2 case — owned and arrived
+- MUSETEX K2 — owned and arrived
 - MSI MAG B850 Tomahawk MAX WiFi — owned and arrived
 
-### Current selections still requiring purchase or final validation
+### Locked but not fully acquired
 
-- MSI MAG CORELIQUID A15 360 — current cooler choice
-- RTX 5060 Ti 16 GB — requirement retained; exact replacement model selecting
-- Secondary display GPU — selecting
-- 64 GB DDR5-6000 EXPO kit — selecting
-- Corsair RM850e (2025) — current PSU choice
-- CyberPower CP1500PFCLCD — current UPS choice
+- AMD Ryzen 9 9900X
+- MSI MAG CORELIQUID A15 360, pending clearance validation
+- 64 GB (2x32 GB) DDR5-6000 EXPO; exact kit open
+- 2 TB NVMe primary storage; exact model open
+- RTX 5060 Ti 16 GB; exact model open
+- Compact NVIDIA secondary GPU; T400 preferred, P620 fallback
+- Corsair RM850e (2025)
+- CyberPower CP1500PFCLCD
 
-### System boundary
+## Cerberus 1.0 — acceptance target
 
-Cerberus will be the primary workstation and command center. Ares V1 will be created by repurposing the retired Version 1 Windows 10 workstation as a separate physical system for specialized, isolated, or infrastructure workloads. Local virtualization on Cerberus is optional rather than a primary design objective.
+Cerberus reaches its first operational release only when:
 
-The future rebuild becomes a new operational version only after assembly and validation are complete.
+- hardware assembly and firmware configuration are complete;
+- Fedora KDE is installed, updated, and recoverable;
+- encryption, SELinux, firewall, and security controls are validated;
+- two NVIDIA GPUs reliably drive all six displays;
+- the Desktop & Workflow Environment is documented;
+- development, container, Ansible/IaC, Kubernetes, cloud, and COC tooling are validated;
+- backups and recovery procedures pass testing;
+- OBS and the streaming workflow are configured last;
+- Cerberus is promoted to primary-workstation duty.
+
+## Project consolidation history
+
+- **Project Hydra:** discontinued before implementation; scope absorbed into Cerberus.
+- **Project Hermes:** remains separate for the Windows 11 laptop.
+- **Project Ares:** separate project; Ares V1 will reuse the retired workstation hardware.
