@@ -1,22 +1,16 @@
-# Windows Installation
+# Windows Host Plan — Superseded
 
-## Installation
+Windows 11 Pro is no longer the planned Cerberus host operating system.
 
-- [ ] Create current Windows 11 Pro installation media.
-- [ ] Install in UEFI mode to the intended NVMe SSD.
-- [ ] Complete Windows Update before optional software installation.
-- [ ] Install motherboard chipset, network, audio, NVIDIA, and secondary-GPU drivers from official sources.
-- [ ] Confirm Device Manager contains no unexplained warnings.
-- [ ] Create a recovery drive and record the recovery procedure.
+Cerberus is now locked to **Fedora KDE Plasma**. See [Fedora Deployment](fedora.md).
 
-## Core software
+## Windows boundaries
 
-- WSL 2
-- Docker
-- Optional hypervisor only if a local Cerberus use case requires it
-- Development tools
-- OBS Studio
-- Monitoring and benchmark utilities
+- Project Hermes remains responsible for the Windows 11 laptop.
+- The current Windows 10 workstation remains operational until Cerberus cutover.
+- That retired hardware will become Ares V1; its future OS is documented by Ares.
+- Windows-only compatibility on Cerberus will be addressed only when a real requirement exists.
+- An optional disposable Windows VM may be considered, but Cerberus is not designed as the primary VM host.
+- Windows anti-cheat gaming is not a Cerberus design requirement; gaming is primarily on PS5.
 
-Record versions and configuration decisions without committing license keys, usernames, or exported secrets.
-
+This file remains as a redirect so older repository links do not silently break.
