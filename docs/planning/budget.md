@@ -2,47 +2,46 @@
 
 ## Current position
 
-The preliminary core budget is now **CA$3,000 or more before tax**, excluding the case. This is a working floor, not a hard ceiling. The final target will be set after the remaining exact models, taxes, shipping, and contingency are priced.
+The preliminary **hardware core budget is CA$3,000+ before tax**, excluding the case. This is a working floor, not a ceiling. The final forecast requires exact SKUs, taxes, shipping, adapters, capture/streaming peripherals, security hardware, and contingency.
 
-The original CA$2,000–2,200 core target is retained only as a superseded historical planning target.
+The original CA$2,000–2,200 target is superseded historical context.
 
-- **Preliminary core target:** CA$3,000+ before tax, excluding the case
-- **Final ceiling:** TBD
-- **Superseded target:** CA$2,000–2,200 before tax, excluding the case
 - **Currency:** Canadian dollars
-- **Recorded prices:** pre-tax amounts shown in the supplied purchase/listing screenshots
-- **Case:** owned, arrived, tracked in total project spend, but excluded from the original core target
+- **Hardware core target:** CA$3,000+ before tax, excluding the case
+- **Final hardware ceiling:** TBD
+- **Platform/software budget:** track separately; favour supported open-source tooling
 - **Taxes and shipping:** not yet recorded
-- **Contingency:** to be recalculated with the revised budget
+- **Contingency:** TBD after exact-part selection
 
-| Category | Current selection / requirement | Budget / reference | Recorded price | Status |
+| Category | Locked selection / requirement | Budget | Recorded price | State |
 |---|---|---:|---:|---|
-| Case | MUSETEX K2 | Excluded from original core target | **CA$89.99** | Owned — arrived |
-| CPU | AMD Ryzen 9 9900X | TBD | — | Planned / locked direction |
-| Cooling | MSI MAG CORELIQUID A15 360 | TBD | — | Current choice |
+| Case | MUSETEX K2 | Excluded from hardware core | **CA$89.99** | Owned — arrived |
 | Motherboard | MSI MAG B850 Tomahawk MAX WiFi | TBD | **CA$294.99** | Owned — arrived |
-| Memory | 64 GB (2x32 GB) DDR5-6000 EXPO | TBD | — | Selecting |
-| Storage | 2 TB PCIe 4.0 NVMe | TBD | — | Planned |
+| CPU | AMD Ryzen 9 9900X | TBD | — | Locked; pending |
+| Cooling | MSI MAG CORELIQUID A15 360 | TBD | — | Locked; pending |
+| Memory | 64 GB DDR5-6000 EXPO | TBD | — | Exact kit selecting |
+| Storage | 2 TB NVMe | TBD | — | Exact model selecting |
 | Primary GPU | RTX 5060 Ti 16 GB | TBD | — | Exact model selecting |
-| Secondary GPU | Low-power display GPU | TBD | — | Selecting |
-| Power supply | Corsair RM850e (2025) | TBD | — | Current choice |
-| UPS | CyberPower CP1500PFCLCD | Track separately | — | Current choice |
-| Cables/adapters/expansion | As validated | TBD | — | Pending |
+| Secondary GPU | NVIDIA T400 preferred / P620 fallback | TBD | — | Exact card selecting |
+| PSU | Corsair RM850e (2025) | TBD | — | Locked; pending |
+| UPS | CyberPower CP1500PFCLCD | Track separately | — | Locked; pending |
+| Cables/adapters | Six-display topology | TBD | — | Pending |
+| Optional USB expansion | Only if PCIe layout permits | TBD | — | Conditional |
+| Capture/streaming | Linux-compatible hardware | TBD | — | Final phase |
+| Security/recovery | Key, media, backup needs | TBD | — | Pending |
 
 ## Recorded totals
 
 | Measure | Amount |
 |---|---:|
-| Acquired core components counted toward current target | **CA$294.99** |
-| Acquired case excluded from original target | **CA$89.99** |
+| Acquired core component | **CA$294.99** |
+| Acquired case outside core convention | **CA$89.99** |
 | **Total recorded acquired hardware** | **CA$384.98** |
-| Taxes and shipping recorded | **TBD** |
-| **Known all-in charged total** | **TBD** |
+| Recorded taxes and shipping | **TBD** |
+| Known tax-inclusive charged total | **TBD** |
 
-## Price evidence
+## Evidence caveat
 
-- **MSI MAG B850 Tomahawk MAX WiFi:** CA$294.99 shown in the supplied Amazon.ca screenshot.
-- **MUSETEX K2:** CA$89.99 shown in the supplied Amazon.ca screenshot; the screenshot also confirms the item was purchased on July 5, 2026.
-- Screenshots include account and location details and should be sanitized before being added as public repository assets.
+The motherboard and case amounts come from supplied Amazon.ca screenshots and are recorded as pre-tax screenshot-supported prices. The case screenshot confirms purchase on July 5, 2026. Replace these values with invoice subtotals and final charges if they differ.
 
-These figures do not yet establish tax-inclusive charged totals. Replace them with order-invoice subtotals and final charges if those amounts differ.
+Screenshots must be sanitized before publication because the originals include account/location information.
