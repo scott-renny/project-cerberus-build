@@ -1,45 +1,56 @@
 # Compatibility Checklist
 
-Complete this checklist using exact manufacturer model numbers before ordering.
-
 ## Owned foundation
 
-- [x] MUSETEX K2 case is owned and has arrived.
-- [ ] Inspect the case and retain its hardware, accessories, and documentation.
-- [x] MSI MAG B850 Tomahawk MAX WiFi motherboard is owned and has arrived.
-- [ ] Inspect the motherboard and retain all packaging and accessories.
-- [ ] Record a sanitized arrival photo in the build log when the image is available.
+- [x] MUSETEX K2 owned and arrived.
+- [x] MSI MAG B850 Tomahawk MAX WiFi owned and arrived.
+- [ ] Inspect both components and retain hardware, accessories, packaging, and documentation.
+- [ ] Add sanitized arrival photos without serial numbers, labels, addresses, or account details.
 
 ## Case and cooling
 
-- [ ] MSI MAG CORELIQUID A15 360 radiator and fans fit the intended mount.
-- [ ] Cooler, tubing, and cables do not obstruct memory or the primary PCIe slot.
-- [ ] Exact RTX 5060 Ti 16 GB card dimensions fit the case.
-- [ ] Secondary GPU fits with adequate intake airflow.
-- [ ] Case fan orientation provides a clear airflow path.
+- [ ] MSI MAG CORELIQUID A15 360 radiator, fans, tubes, pump cable, and headers fit the selected layout.
+- [ ] Cooler does not obstruct memory or the primary PCIe slot.
+- [ ] Exact RTX 5060 Ti 16 GB dimensions fit.
+- [ ] Compact secondary NVIDIA GPU fits and preserves airflow.
+- [ ] Bottom intake is not blocked.
+- [ ] Slot-mounted anti-sag support, if needed, does not obstruct the lower GPU.
 
-## Motherboard and expansion
+## Motherboard, PCIe, and storage
 
-- [ ] Confirm BIOS support for the Ryzen 9 9900X and BIOS Flashback procedure.
-- [ ] Map the exact MSI MAG B850 Tomahawk MAX WiFi PCIe slots and electrical lanes.
-- [ ] Confirm the lower slot remains accessible with the selected primary GPU thickness.
-- [ ] Confirm the secondary display GPU receives sufficient lanes and clearance.
-- [ ] Determine whether a USB expansion card can coexist with both GPUs.
-- [ ] Confirm whether any PCIe choice shares resources with a required M.2 slot or port.
-- [ ] Confirm front-panel USB, audio, pump, fan, and case connectors.
-- [ ] Select a slot-mounted anti-sag bracket only if required; avoid blocking the secondary GPU.
+- [ ] Current BIOS supports the Ryzen 9 9900X.
+- [ ] M-FLASH and Flash BIOS recovery procedures documented.
+- [ ] Primary GPU assigned to the CPU-connected primary slot.
+- [ ] Lower slot supplies acceptable bandwidth for the secondary display GPU.
+- [ ] M2_3 sharing behavior verified; leave it unused if required.
+- [ ] Primary Fedora SSD assigned to a non-conflicting M.2 slot.
+- [ ] Optional USB expansion can coexist with both GPUs.
+- [ ] Front-panel USB/audio, pump, fan, ARGB, and power headers mapped.
+
+## Fedora and peripherals
+
+- [ ] Exact primary and secondary GPUs supported by the selected NVIDIA driver.
+- [ ] Secure Boot approach compatible with NVIDIA modules.
+- [ ] Capture card supports Linux/UVC and required resolution/frame rate.
+- [ ] Stream Deck workflow has an acceptable Linux solution.
+- [ ] AIO, fans, sensors, and RGB have acceptable firmware/Linux control or safe firmware defaults.
+- [ ] Audio interface, microphone, webcam, Bluetooth, and other required devices have Linux support.
+- [ ] Sleep/wake expectations documented for the final hardware.
 
 ## Power
 
-- [ ] Confirm the Corsair RM850e (2025) meets the final GPU recommendation.
-- [ ] Confirm every required connector without unsafe splitters.
-- [ ] Estimate sustained and transient load with reasonable headroom.
-- [ ] Confirm PSU dimensions and cable routing in the case.
-- [ ] Confirm the CyberPower CP1500PFCLCD load and desired runtime after assembly.
+- [ ] RM850e meets final GPU requirements and has every connector.
+- [ ] Use only supplied or explicitly compatible modular cables.
+- [ ] Sustained and transient estimates leave reasonable headroom.
+- [ ] PSU dimensions and cable routing fit.
+- [ ] CP1500PFCLCD load, USB monitoring, shutdown integration, and target runtime verified.
+- [ ] High-draw devices such as printers remain off battery-backed outlets.
 
-## Displays
+## Six displays
 
-- [ ] Record each monitor’s resolution, refresh rate, and inputs.
-- [ ] Confirm the exact two GPU models provide six compatible physical outputs in total.
-- [ ] Document required cable standards and lengths.
-- [ ] Provide separate power for portable monitors where required.
+- [ ] Model, resolution, refresh, scale, orientation, input, and power recorded for each display.
+- [ ] Exact GPU outputs support all six.
+- [ ] Mini DisplayPort and other required adapters are active/passive as appropriate.
+- [ ] Cable standards and lengths documented.
+- [ ] Portable-monitor power documented.
+- [ ] KDE mixed-scale and mixed-refresh behavior validated.
