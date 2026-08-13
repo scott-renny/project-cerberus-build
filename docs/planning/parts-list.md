@@ -1,36 +1,36 @@
 # Parts List
 
-Prices are recorded in Canadian dollars. “Current choice” records the active direction; only “Owned” confirms acquisition.
+“Locked” means the design decision is settled. It does not mean purchased. Only “Owned” confirms acquisition.
 
-| Component | Selection | Status | Recorded price | Notes |
-|---|---|---|---:|---|
-| Case | MUSETEX K2 | **Owned — arrived** | **CA$89.99** | Purchased July 5, 2026; case is on hand |
-| CPU | AMD Ryzen 9 9900X | Planned / locked direction | — | 12 cores / 24 threads |
-| Cooler | MSI MAG CORELIQUID A15 360 | Current choice | — | Verify radiator, fan, RAM, and cable clearance |
-| Motherboard | MSI MAG B850 Tomahawk MAX WiFi | **Owned — arrived** | **CA$294.99** | Exact board available for slot and header validation |
-| Memory | 64 GB (2x32 GB) DDR5-6000 EXPO | Selecting | — | Prefer a validated two-DIMM kit |
-| SSD | 2 TB PCIe 4.0 NVMe | Planned | — | Exact model not yet recorded |
-| Primary GPU | RTX 5060 Ti 16 GB | Required; exact model selecting | — | Original MSI Ventus model became unavailable |
-| Secondary GPU | Low-power display GPU | Selecting | — | Must coexist physically and electrically with primary GPU |
-| Power supply | Corsair RM850e (2025) | Current choice | — | Confirm final connector and load requirements |
-| UPS | CyberPower CP1500PFCLCD, 1500 VA / 1000 W | Current choice | — | Confirm runtime after measuring final system load |
-| USB expansion | Model not selected | Optional / validating | — | Validate usable slot after both GPUs are mapped |
+| Component | Selection / specification | Decision state | Acquisition state | Recorded price |
+|---|---|---|---|---:|
+| Case | MUSETEX K2 | Locked | **Owned — arrived** | **CA$89.99** |
+| Motherboard | MSI MAG B850 Tomahawk MAX WiFi | Locked | **Owned — arrived** | **CA$294.99** |
+| CPU | AMD Ryzen 9 9900X | **Locked** | Purchase pending | — |
+| Cooler | MSI MAG CORELIQUID A15 360 | **Locked**, pending clearance validation | Purchase pending | — |
+| Memory | 64 GB (2x32 GB) DDR5-6000 EXPO | Specification locked | Exact kit selecting | — |
+| Primary SSD | 2 TB M.2 NVMe | Specification locked | Exact model selecting | — |
+| Primary GPU | NVIDIA RTX 5060 Ti 16 GB | Specification locked | Exact model selecting | — |
+| Secondary GPU | Compact low-power NVIDIA display GPU | Direction locked | T400 preferred; P620 fallback | — |
+| Power supply | Corsair RM850e (2025), 850 W | **Locked** | Purchase pending | — |
+| UPS | CyberPower CP1500PFCLCD, 1500 VA / 1000 W | **Locked** | Purchase pending | — |
+| USB expansion | Model not selected | Optional | PCIe validation required | — |
+| GPU support | Slot-mounted bracket if required | Conditional | Final GPU dimensions required | — |
 
-The two recorded screenshot prices total **CA$384.98 before unrecorded tax and shipping**. The case remains excluded from the original core-budget target but is included in total project spending.
+The two recorded screenshot prices total **CA$384.98 before unrecorded tax and shipping**. The case remains outside the original core-budget convention but is included in total project spending.
 
-## Motherboard validation now possible
+## Selection rules
 
-Use the exact owned MSI MAG B850 Tomahawk MAX WiFi and its manual to map:
+- Do not substitute an 8 GB RTX 5060 for the locked RTX 5060 Ti 16 GB requirement merely because it is easier to find.
+- Prefer a compact primary GPU because the lower display GPU and bottom intake airflow require clearance.
+- Keep both GPUs in the NVIDIA Linux driver ecosystem.
+- Prefer an NVIDIA T400 near the intended budget; use a P620 as a practical fallback.
+- Verify Mini DisplayPort adapters and cable standards before ordering the secondary GPU.
+- Prefer a two-DIMM EXPO memory kit.
+- Use the motherboard M.2 heatsink or the SSD's heatsink, never both.
+- Keep M2_3 unused if required to preserve lower-slot bandwidth for the secondary GPU.
+- Buy the USB expansion card and GPU support only after the final physical slot map is proven.
 
-- the primary RTX 5060 Ti slot;
-- the lower slot available to the secondary display GPU;
-- any remaining usable slot for a USB expansion card;
-- electrical lane allocation and any M.2 or port sharing;
-- physical clearance with the selected primary GPU thickness;
-- front-panel, USB, pump, fan, and power headers.
+## Purchase record
 
-Do not buy the secondary GPU, USB expansion card, or GPU support hardware until the physical slot map is confirmed.
-
-## Before purchasing
-
-Record the retailer, exact SKU, price, warranty, return window, and product-page link. Do not rely on a family name alone because port layouts and physical dimensions vary by model.
+For every purchase, record the retailer, exact SKU, pre-tax price, taxes, shipping, final charge, warranty, return window, and sanitized evidence. Do not publish serial numbers, addresses, order numbers, or account details.
