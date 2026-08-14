@@ -123,6 +123,8 @@ The existing Windows 10 dual-monitor workstation remains operational until Cerbe
 - [Display Plan](docs/displays/display-plan.md)
 - [Dual-GPU Configuration](docs/displays/dual-gpu.md)
 - [Validation Test Plan](docs/testing/test-plan.md)
+- [Operations Runbooks](docs/operations/README.md)
+- [Maintenance Log](docs/operations/maintenance.md)
 - [Version History](docs/history/version-history.md)
 
 ## Security and privacy

@@ -6,6 +6,13 @@ All notable changes to Project Cerberus are recorded here.
 
 ### Added
 
+- Governed Fedora operations runbook index.
+- Fedora update and rollback procedure.
+- Backup, LUKS recovery, selective restore, and trusted rebuild procedure.
+- Wazuh Linux-agent health and re-enrollment procedure.
+- Endpoint isolation and approved reconnection procedure.
+- NVIDIA, Secure Boot module, and six-display recovery procedure.
+- Hardware security-key recovery procedure.
 - Fedora KDE-based platform architecture.
 - Desktop & Workflow Environment workstream absorbing Project Hydra.
 - Automation & Control Node workstream covering Ansible, IaC, Kubernetes, cloud, and COC management.
@@ -17,6 +24,7 @@ All notable changes to Project Cerberus are recorded here.
 
 ### Changed
 
+- Replaced the stale Windows maintenance reference with Fedora package, kernel, Flatpak, firmware, NVIDIA, Wazuh, and recovery checks.
 - Renamed the project concept from a PC build log to a complete Fedora Linux engineering workstation and COC command-platform program.
 - Replaced Windows 11 Pro with Fedora KDE Plasma as the locked host OS.
 - Replaced WSL/Docker assumptions with Fedora-native Podman, Distrobox, and optional KVM/QEMU.
