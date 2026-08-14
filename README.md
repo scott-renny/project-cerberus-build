@@ -11,6 +11,8 @@ Project Cerberus is the design, construction, deployment, hardening, and ongoing
 > **Current baseline:** Existing Windows 10 dual-monitor workstation  
 > **Successor platform:** Cerberus on Fedora KDE Plasma  
 > **Preliminary core budget:** CA$3,000+ before tax, excluding the case; final ceiling TBD
+>
+> **Program relationship:** Cerberus is the workstation-delivery project for [COC Phase 8.5](https://github.com/scott-renny/cyber-operations-center-engineering-program/tree/main/phases/phase-08-5-workstation-migration).
 
 ## More than a system build
 
