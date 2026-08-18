@@ -2,7 +2,7 @@
 
 ## Mission
 
-Cerberus is a Fedora KDE Linux engineering workstation and Cyber Operations Center command platform. It is the trusted interactive point from which infrastructure is built, administered, observed, documented, and improved.
+Cerberus is a Linux Mint Cinnamon Linux engineering workstation and Cyber Operations Center command platform. It is the trusted interactive point from which infrastructure is built, administered, observed, documented, and improved.
 
 ## Workstreams
 
@@ -10,21 +10,21 @@ Cerberus is a Fedora KDE Linux engineering workstation and Cyber Operations Cent
 
 Custom dual-GPU, six-display workstation; firmware; cooling; power; storage; expansion; UPS; and validation.
 
-### Fedora foundation
+### Linux Mint foundation
 
-Encrypted Fedora KDE deployment, updates, firmware, NVIDIA drivers, recovery, and lifecycle management.
+Encrypted Linux Mint Cinnamon deployment, updates, firmware, NVIDIA drivers, recovery, and lifecycle management.
 
 ### Desktop & Workflow Environment
 
-The scope formerly planned as Project Hydra: KDE activities, virtual desktops, window rules, launchers, hotkeys, monitor roles, workspace restoration, and command-center workflows.
+The scope formerly planned as Project Hydra: Cinnamon workspaces, virtual desktops, window rules, launchers, hotkeys, monitor roles, workspace restoration, and command-center workflows.
 
 ### Security
 
-SELinux, firewall, encryption, Secure Boot strategy, hardware-key integration, least privilege, backup, recovery, and secrets boundaries.
+AppArmor, firewall, encryption, Secure Boot strategy, hardware-key integration, least privilege, backup, recovery, and secrets boundaries.
 
 ### Engineering toolchain
 
-Git, GitHub CLI, Bash, Python with isolated environments, VS Code/VSCodium, Podman, Podman Desktop, Distrobox, and documentation tooling.
+Git, GitHub CLI, Bash, Python with isolated environments, VS Code/VSCodium, Docker, Docker Compose, Distrobox, and documentation tooling.
 
 ### Automation & control node
 
