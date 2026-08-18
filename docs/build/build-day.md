@@ -15,7 +15,7 @@ This is the hardware workstream of the broader Cerberus platform project.
 - [ ] Retain the manual, Wi-Fi antenna, SATA cables, M.2 hardware, screws, bags, and accessories.
 - [ ] Inspect the AM5 socket, board, case, glass, connectors, and included fans.
 - [ ] Confirm radiator, GPU, M.2, and PCIe plans.
-- [ ] Prepare verified BIOS and Fedora media on separate labelled USB drives.
+- [ ] Prepare verified BIOS and Linux Mint media on separate labelled USB drives.
 - [ ] Record components without publishing serial numbers.
 
 ## Assembly and firmware record
@@ -27,7 +27,7 @@ This is the hardware workstream of the broader Cerberus platform project.
 | Install primary SSD | Pending | Exact 2 TB model selecting |
 | Install cooler | Pending | A15 360 clearance must be validated |
 | Bench POST | Pending | Inspect temperatures and detection |
-| Update BIOS with M-FLASH | Pending | Complete before Fedora |
+| Update BIOS with M-FLASH | Pending | Complete before Linux Mint |
 | Configure UEFI baseline | Pending | See BIOS guide |
 | Install motherboard | Pending | |
 | Install RM850e | Pending | Use only correct modular cables |
@@ -36,7 +36,7 @@ This is the hardware workstream of the broader Cerberus platform project.
 | Install optional USB expansion | Conditional | Only after slot proof |
 | Complete fans/front panel | Pending | |
 | Cold-boot repetition | Pending | |
-| Install Fedora KDE | Pending | Starts software/platform workstream |
+| Install Linux Mint Cinnamon | Pending | Starts software/platform workstream |
 
 ## Issues and resolutions
 
