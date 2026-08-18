@@ -3,7 +3,7 @@
 ## 1. Architecture and consolidation
 
 - [x] Define Cerberus as more than a hardware build.
-- [x] Lock Fedora KDE Plasma as the host operating system.
+- [x] Lock Linux Mint Cinnamon as the host operating system.
 - [x] Define Cerberus as the Linux engineering workstation and COC control node.
 - [x] Consolidate Project Hydra into Cerberus.
 - [x] Preserve Project Hermes for the Windows 11 laptop.
@@ -48,21 +48,21 @@
 - [ ] Install both GPUs without obstructing airflow or required slots.
 - [ ] Complete cable management and repeat cold-boot tests.
 
-## 5. Fedora foundation
+## 5. Linux Mint foundation
 
-- [ ] Create and verify Fedora KDE installation media.
-- [ ] Install Fedora with encryption and documented storage layout.
-- [ ] Apply updates and firmware through supported Fedora mechanisms.
+- [ ] Create and verify Linux Mint Cinnamon installation media.
+- [ ] Install Linux Mint with encryption and documented storage layout.
+- [ ] Apply updates and firmware through supported Linux Mint mechanisms.
 - [ ] Install and validate NVIDIA drivers.
 - [ ] Validate all six displays.
 - [ ] Configure backups and recovery media.
 
 ## 6. Security and workstation platform
 
-- [ ] Validate SELinux enforcing and firewall policy.
+- [ ] Validate AppArmor enabled and enforcing and firewall policy.
 - [ ] Integrate the hardware security key where supported.
 - [ ] Build the Desktop & Workflow Environment.
-- [ ] Install Git, Python, Podman, Distrobox, and development tooling.
+- [ ] Install Git, Python, Docker, Distrobox, and development tooling.
 - [ ] Configure Ansible/IaC control-node functions.
 - [ ] Configure Kubernetes, AWS, and COC management tooling.
 - [ ] Add optional local virtualization only if required.
@@ -70,7 +70,7 @@
 
 ## 7. Validation, cutover, and streaming
 
-- [ ] Complete hardware, Fedora, security, workflow, COC, and recovery testing.
+- [ ] Complete hardware, Linux Mint, security, workflow, COC, and recovery testing.
 - [ ] Document the accepted platform baseline.
 - [ ] Configure OBS and the PS5 streaming workflow last.
 - [ ] Promote Cerberus to primary workstation.
