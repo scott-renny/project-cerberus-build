@@ -23,11 +23,11 @@
 - [ ] Primary GPU assigned to the CPU-connected primary slot.
 - [ ] Lower slot supplies acceptable bandwidth for the secondary display GPU.
 - [ ] M2_3 sharing behavior verified; leave it unused if required.
-- [ ] Primary Fedora SSD assigned to a non-conflicting M.2 slot.
+- [ ] Primary Linux Mint SSD assigned to a non-conflicting M.2 slot.
 - [ ] Optional USB expansion can coexist with both GPUs.
 - [ ] Front-panel USB/audio, pump, fan, ARGB, and power headers mapped.
 
-## Fedora and peripherals
+## Linux Mint and peripherals
 
 - [ ] Exact primary and secondary GPUs supported by the selected NVIDIA driver.
 - [ ] Secure Boot approach compatible with NVIDIA modules.
@@ -53,4 +53,4 @@
 - [ ] Mini DisplayPort and other required adapters are active/passive as appropriate.
 - [ ] Cable standards and lengths documented.
 - [ ] Portable-monitor power documented.
-- [ ] KDE mixed-scale and mixed-refresh behavior validated.
+- [ ] Cinnamon mixed-scale and mixed-refresh behavior validated.
