@@ -1,6 +1,6 @@
 # Cerberus Operations Runbooks
 
-These procedures govern recurring maintenance, recovery, monitoring, and incident actions for the Fedora KDE workstation. They are planning baselines until Cerberus is installed and each procedure passes its validation gate.
+These procedures govern recurring maintenance, recovery, monitoring, and incident actions for the Linux Mint Cinnamon workstation. They are planning baselines until Cerberus is installed and each procedure passes its validation gate.
 
 ## Status model
 
@@ -16,7 +16,7 @@ These procedures govern recurring maintenance, recovery, monitoring, and inciden
 
 | Procedure | Status | Validation gate |
 |---|---|---|
-| [Fedora Update and Rollback](fedora-update-and-rollback.md) | Planned | package, Flatpak, firmware, kernel, reboot, and rollback paths tested |
+| [Linux Mint Update and Rollback](linux-mint-update-and-rollback.md) | Planned | package, Flatpak, firmware, kernel, reboot, and rollback paths tested |
 | [Backup, Encrypted Recovery, and Rebuild](backup-encrypted-recovery-and-rebuild.md) | Planned | backup, isolated restore, LUKS recovery, and trusted rebuild exercised |
 | [Wazuh Agent Health and Re-enrollment](wazuh-agent-health.md) | Planned | telemetry interruption detected and restored |
 | [Endpoint Isolation and Reconnection](endpoint-isolation-and-reconnection.md) | Planned | isolation and approved reconnection tested without losing evidence |
@@ -26,7 +26,7 @@ These procedures govern recurring maintenance, recovery, monitoring, and inciden
 ## Operating rules
 
 - Record a change or incident identifier, operator, start time, expected outcome, and rollback point.
-- Use current official Fedora, Wazuh, hardware-vendor, and application documentation at execution time.
+- Use current official Linux Mint, Wazuh, hardware-vendor, and application documentation at execution time.
 - Never publish credentials, recovery material, serial numbers, private addresses, enrollment secrets, or raw system exports.
 - Stop when the target device, storage device, package transaction, or recovery point is uncertain.
 - Preserve evidence before destructive repair when compromise is possible.
