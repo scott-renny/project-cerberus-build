@@ -6,11 +6,11 @@
 **Decision:** Build Cerberus from individually selected components.  
 **Reason:** Available prebuilt systems forced unacceptable compromises in display capacity, expansion, cooling, power quality, component transparency, and upgradeability.
 
-## ADR-002: Use Fedora KDE Plasma
+## ADR-002: Use Linux Mint Cinnamon
 
 **Status:** **Locked**  
-**Decision:** Fedora KDE Plasma replaces the earlier Windows 11 host plan.  
-**Reason:** Fedora supports the Linux engineering, cybersecurity, container, automation, Kubernetes, cloud, and learning objectives. KDE is well suited to the six-display workflow.
+**Decision:** Linux Mint Cinnamon replaces the earlier Windows 11 host plan.  
+**Reason:** Linux Mint supports the Linux engineering, cybersecurity, container, automation, Kubernetes, cloud, and learning objectives. Cinnamon is well suited to the six-display workflow.
 
 ## ADR-003: Make Cerberus the engineering and COC control platform
 
@@ -22,13 +22,13 @@
 
 **Status:** Accepted  
 **Decision:** Discontinue Hydra as a standalone project and move its intended desktop/workspace scope into Cerberus.  
-**Reason:** KDE desktop design, display topology, automation, hardening, and platform deployment must be engineered together. Hydra had not reached implementation, so no code migration is required.
+**Reason:** Cinnamon desktop design, display topology, automation, hardening, and platform deployment must be engineered together. Hydra had not reached implementation, so no code migration is required.
 
 ## ADR-005: Keep Project Hermes separate
 
 **Status:** Accepted  
 **Decision:** Keep Hermes as the Windows 11 laptop automation project.  
-**Reason:** Hermes remains appropriate for Windows and PowerShell. Cerberus requires Fedora-native configuration rather than a forced port.
+**Reason:** Hermes remains appropriate for Windows and PowerShell. Cerberus requires Linux Mint-native configuration rather than a forced port.
 
 ## ADR-006: Repurpose the retired workstation as Ares V1
 
@@ -62,13 +62,13 @@
 
 **Status:** **Locked architecture**  
 **Decision:** Use an RTX 5060 Ti 16 GB primary GPU and a compact, low-power NVIDIA secondary display GPU. Prefer an NVIDIA T400; retain the P620 as fallback.  
-**Reason:** Six direct displays require two GPUs. One NVIDIA driver ecosystem reduces avoidable Fedora complexity, while a workstation-class secondary card preserves clearance and airflow.
+**Reason:** Six direct displays require two GPUs. One NVIDIA driver ecosystem reduces avoidable Linux Mint complexity, while a workstation-class secondary card preserves clearance and airflow.
 
 ## ADR-012: Keep the RTX 5060 Ti model flexible
 
 **Status:** Exact model selecting  
 **Decision:** Preserve the RTX 5060 Ti 16 GB requirement without requiring the unavailable/overpriced MSI Ventus model.  
-**Reason:** VRAM, Fedora support, CUDA, NVENC, physical dimensions, outputs, cooling, and price matter more than manufacturer branding.
+**Reason:** VRAM, Linux Mint support, CUDA, NVENC, physical dimensions, outputs, cooling, and price matter more than manufacturer branding.
 
 ## ADR-013: Use one 2 TB NVMe SSD initially
 
