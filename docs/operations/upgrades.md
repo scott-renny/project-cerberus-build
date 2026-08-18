@@ -20,11 +20,11 @@ Use the onboard 2.5 Gb Ethernet initially. Upgrade only when Olympus, switching,
 
 ## Expansion
 
-Add USB or capture expansion only after proving physical slot access, lane allocation, Fedora support, and power requirements.
+Add USB or capture expansion only after proving physical slot access, lane allocation, Linux Mint support, and power requirements.
 
-## Fedora lifecycle
+## Linux Mint lifecycle
 
-Track supported Fedora releases, kernel/NVIDIA compatibility, configuration changes, recovery procedures, and upgrade validation. Test major platform upgrades before treating them as accepted.
+Track supported Linux Mint releases, kernel/NVIDIA compatibility, configuration changes, recovery procedures, and upgrade validation. Test major platform upgrades before treating them as accepted.
 
 ## Automation maturity
 
