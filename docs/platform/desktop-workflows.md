@@ -5,9 +5,9 @@ This workstream absorbs the intended scope of the discontinued Project Hydra.
 ## Goals
 
 - Make six displays useful rather than merely connected.
-- Provide stable KDE layouts for engineering, COC operations, research, infrastructure, and streaming.
+- Provide stable Cinnamon layouts for engineering, COC operations, research, infrastructure, and streaming.
 - Restore workflows after reboot and display changes.
-- Teach and preserve understandable Fedora/KDE configuration.
+- Teach and preserve understandable Linux Mint/Cinnamon configuration.
 - Keep sanitized configuration version-controlled.
 
 ## Planned modes
@@ -34,7 +34,7 @@ OBS, capture preview, chat, controls, monitoring, and documentation. Implemented
 
 ## Implementation direction
 
-- KDE Plasma activities and virtual desktops
+- Cinnamon activities and virtual desktops
 - KWin window rules and shortcuts
 - Konsole and tmux workflows
 - Application launchers
@@ -42,4 +42,4 @@ OBS, capture preview, chat, controls, monitoring, and documentation. Implemented
 - Backup and recovery documentation
 - Reduced-display safe mode
 
-Do not copy Hydra's abandoned Windows 10/PowerShell assumptions into Fedora.
+Do not copy Hydra's abandoned Windows 10/PowerShell assumptions into Linux Mint.
