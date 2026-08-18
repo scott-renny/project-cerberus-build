@@ -2,7 +2,7 @@
 
 Windows 11 Pro is no longer the planned Cerberus host operating system.
 
-Cerberus is now locked to **Fedora KDE Plasma**. See [Fedora Deployment](fedora.md).
+Cerberus is now locked to **Linux Mint Cinnamon**. See [Linux Mint Deployment](linux-mint.md).
 
 ## Windows boundaries
 
