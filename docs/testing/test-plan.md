@@ -13,15 +13,15 @@
 | Storage | SMART/health and performance test | Healthy; expected range | Pending |
 | UPS | Load, USB monitoring, outage simulation | Clean detection and controlled shutdown | Pending |
 
-## Fedora platform
+## Linux Mint platform
 
 | Area | Test | Pass condition | Result |
 |---|---|---|---|
-| Boot | Encrypted Fedora boot and login | Reliable and recoverable | Pending |
+| Boot | Encrypted Linux Mint boot and login | Reliable and recoverable | Pending |
 | Updates | Kernel and package update/reboot | Returns to working desktop | Pending |
 | Firmware | fwupd/LVFS discovery where supported | Results documented | Pending |
 | NVIDIA | Driver, CUDA, and NVENC checks | Acceleration available | Pending |
-| Security | SELinux, firewall, encryption, Secure Boot plan | Required controls active | Pending |
+| Security | AppArmor, firewall, encryption, Secure Boot plan | Required controls active | Pending |
 | Recovery | Media and documented rollback | Representative recovery succeeds | Pending |
 
 ## Six-display environment
@@ -39,7 +39,7 @@
 | Area | Test | Pass condition | Result |
 |---|---|---|---|
 | Git/Python | Representative repository and environment | Works without global-package pollution | Pending |
-| Podman | Rootless container build/run | Successful | Pending |
+| Docker | Rootless container build/run | Successful | Pending |
 | Distrobox | Representative alternate userspace | Works and remains removable | Pending |
 | Ansible | Check-mode against authorized test target | Expected, documented result | Pending |
 | Kubernetes | kubectl/Helm access | Authorized cluster query succeeds | Pending |
