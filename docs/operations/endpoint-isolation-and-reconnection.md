@@ -39,8 +39,8 @@ Before reconnecting, require:
 
 - incident-lead approval;
 - malware and persistence disposition;
-- current Fedora and application updates;
-- SELinux Enforcing and firewalld active;
+- current Linux Mint and application updates;
+- AppArmor Enforcing and firewalld active;
 - reviewed listening services;
 - valid Wazuh telemetry;
 - backup and representative restore success;
