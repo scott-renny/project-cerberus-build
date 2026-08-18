@@ -1,4 +1,4 @@
-# Fedora Dual-GPU Configuration
+# Linux Mint Dual-GPU Configuration
 
 ## Locked architecture
 
@@ -11,7 +11,7 @@ Both cards remain in one NVIDIA Linux driver ecosystem.
 
 ### RTX 5060 Ti 16 GB
 
-- Primary KDE desktop displays
+- Primary Cinnamon desktop displays
 - CUDA and local AI experimentation
 - GPU-accelerated creative/development work
 - NVENC for OBS
@@ -35,12 +35,12 @@ Use the owned MSI MAG B850 Tomahawk MAX WiFi and current manual to confirm:
 - optional USB expansion only after both GPUs are mapped;
 - slot-mounted anti-sag support only if it does not obstruct the secondary card.
 
-## Fedora deployment checklist
+## Linux Mint deployment checklist
 
-- [ ] Install the supported Fedora NVIDIA driver path deliberately.
+- [ ] Install the supported Linux Mint NVIDIA driver path deliberately.
 - [ ] Document Secure Boot handling for third-party NVIDIA modules.
 - [ ] Confirm both GPUs appear in Linux hardware and NVIDIA tooling.
-- [ ] Confirm KDE detects every display.
+- [ ] Confirm Cinnamon detects every display.
 - [ ] Configure resolution, refresh, scaling, orientation, and primary output.
 - [ ] Confirm CUDA on the primary GPU.
 - [ ] Confirm OBS NVENC.
