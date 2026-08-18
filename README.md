@@ -1,15 +1,15 @@
 # Project Cerberus
 
 [![Status: Planning and acquisition](https://img.shields.io/badge/status-planning%20%26%20acquisition-f0ad4e)](docs/planning/milestones.md)
-[![Platform: Fedora KDE](https://img.shields.io/badge/platform-Fedora%20KDE-51A2DA?logo=fedora&logoColor=white)](docs/platform/architecture.md)
+[![Platform: Linux Mint Cinnamon](https://img.shields.io/badge/platform-Linux Mint%20Cinnamon-51A2DA?logo=fedora&logoColor=white)](docs/platform/architecture.md)
 [![Hardware: Two components arrived](https://img.shields.io/badge/hardware-2%20components%20arrived-success)](docs/planning/parts-list.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-Project Cerberus is the design, construction, deployment, hardening, and ongoing development of a purpose-built Fedora KDE Linux engineering workstation and Cyber Operations Center command platform.
+Project Cerberus is the design, construction, deployment, hardening, and ongoing development of a purpose-built Linux Mint Cinnamon Linux engineering workstation and Cyber Operations Center command platform.
 
 > **Status:** Platform design, hardware acquisition, and deployment planning  
 > **Current baseline:** Existing Windows 10 dual-monitor workstation  
-> **Successor platform:** Cerberus on Fedora KDE Plasma  
+> **Successor platform:** Cerberus on Linux Mint Cinnamon  
 > **Preliminary core budget:** CA$3,000+ before tax, excluding the case; final ceiling TBD
 >
 > **Program relationship:** Cerberus is the workstation-delivery project for [COC Phase 8.5](https://github.com/scott-renny/cyber-operations-center-engineering-program/tree/main/phases/phase-08-5-workstation-migration).
@@ -18,13 +18,13 @@ Project Cerberus is the design, construction, deployment, hardening, and ongoing
 
 Cerberus began as an attempt to buy a workstation with the right performance, display capacity, expansion, cooling, power quality, and upgrade path. Suitable prebuilt systems required too many compromises, so the workstation became a custom build.
 
-The decision to replace Windows with Fedora KDE expanded Cerberus beyond hardware. It now includes:
+The decision to replace Windows with Linux Mint Cinnamon expanded Cerberus beyond hardware. It now includes:
 
 - Hardware architecture, acquisition, assembly, firmware, and validation
-- Fedora KDE installation, security hardening, recovery, and lifecycle management
+- Linux Mint Cinnamon installation, security hardening, recovery, and lifecycle management
 - A six-display, dual-NVIDIA-GPU command environment
 - Desktop and workflow engineering previously planned as Project Hydra
-- Linux development, Podman, Distrobox, and optional disposable KVM/QEMU virtual machines
+- Linux development, Docker, Distrobox, and optional disposable KVM/QEMU virtual machines
 - Git, GitHub, Python, Ansible, OpenTofu/Terraform, AWS, and Kubernetes tooling
 - Ansible/IaC control-node duties for the wider environment
 - COC access and management for Atlas, Hestia, Ares, Olympus, Kubernetes, Wazuh, Grafana, UniFi, and related systems
@@ -37,11 +37,11 @@ Cerberus is an interactive operator and engineering platform. Permanent services
 
 | Area | Decision | State |
 |---|---|---|
-| Host operating system | **Fedora KDE Plasma** | **Locked** |
+| Host operating system | **Linux Mint Cinnamon** | **Locked** |
 | Platform role | Linux engineering workstation and COC control node | **Locked** |
-| Desktop scope | Six-display KDE workflow environment | **Consolidated from Hydra** |
+| Desktop scope | Six-display Cinnamon workflow environment | **Consolidated from Hydra** |
 | Automation | Ansible/IaC, shell tooling, Git-managed configuration | **Locked direction** |
-| Containers | Podman, Podman Desktop, and Distrobox | **Locked direction** |
+| Containers | Docker, Docker Compose, and Distrobox | **Locked direction** |
 | Local virtualization | KVM/QEMU and virt-manager when a real temporary use case exists | Optional |
 | Streaming | OBS and PS5 capture workflow | Final deployment phase |
 | Windows laptop automation | Project Hermes | Separate project |
@@ -74,7 +74,7 @@ The owned motherboard enables validation against the real board and manual:
 - Primary RTX 5060 Ti in the CPU-connected primary slot
 - Compact secondary NVIDIA display GPU in the usable lower slot
 - M2_3 left unused if required to preserve lower-slot bandwidth
-- Primary Fedora SSD placed in a non-conflicting M.2 slot
+- Primary Linux Mint SSD placed in a non-conflicting M.2 slot
 - USB expansion card added only if both GPUs leave a suitable slot
 - Slot-mounted GPU support considered only after the final card dimensions are known
 
@@ -82,7 +82,7 @@ The owned motherboard enables validation against the real board and manual:
 
 Project Hydra is discontinued as a standalone project. Its planned multi-monitor responsibilities now form Cerberus's **Desktop & Workflow Environment** workstream.
 
-Project Hermes remains separate for the Windows 11 laptop. Its Windows/PowerShell implementation is not being ported wholesale into Fedora, although its repeatability, validation, recovery, and documentation principles inform Cerberus.
+Project Hermes remains separate for the Windows 11 laptop. Its Windows/PowerShell implementation is not being ported wholesale into Linux Mint, although its repeatability, validation, recovery, and documentation principles inform Cerberus.
 
 ## System transition
 
@@ -93,7 +93,7 @@ The existing Windows 10 dual-monitor workstation remains operational until Cerbe
 1. Hardware assembly and first POST
 2. BIOS/UEFI and firmware updates
 3. Baseline hardware and thermal validation
-4. Fedora KDE installation with encryption
+4. Linux Mint Cinnamon installation with encryption
 5. Updates, firmware, NVIDIA drivers, and six-display validation
 6. Security hardening
 7. Desktop & Workflow Environment
@@ -115,7 +115,7 @@ The existing Windows 10 dual-monitor workstation remains operational until Cerbe
 - [Decision Log](docs/planning/decision-log.md)
 - [Compatibility Checklist](docs/planning/compatibility-checklist.md)
 - [Build Day](docs/build/build-day.md)
-- [Fedora Deployment](docs/configuration/fedora.md)
+- [Linux Mint Deployment](docs/configuration/linux-mint.md)
 - [BIOS Configuration](docs/configuration/bios.md)
 - [System Hardening](docs/configuration/hardening.md)
 - [Desktop & Workflow Environment](docs/platform/desktop-workflows.md)
