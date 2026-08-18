@@ -7,7 +7,7 @@
 
 ## Purpose
 
-Detect and recover a failed Fedora Wazuh agent while protecting enrollment access, preserving the permanent asset identity, and avoiding duplicate registrations.
+Detect and recover a failed Linux Mint Wazuh agent while protecting enrollment access, preserving the permanent asset identity, and avoiding duplicate registrations.
 
 ## Health checks
 
