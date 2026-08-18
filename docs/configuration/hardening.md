@@ -1,10 +1,10 @@
-# Fedora System Hardening
+# Linux Mint System Hardening
 
 ## Trust baseline
 
-- [ ] Install Fedora from verified official media.
+- [ ] Install Linux Mint from verified official media.
 - [ ] Use full-disk encryption and store recovery material securely offline.
-- [ ] Keep SELinux enforcing.
+- [ ] Keep AppArmor enabled and enforcing.
 - [ ] Enable and validate the host firewall.
 - [ ] Use a standard user for routine work and elevation only when required.
 - [ ] Configure Secure Boot using a documented approach compatible with the selected NVIDIA driver installation.
@@ -18,7 +18,7 @@
 
 ## Workload isolation
 
-- [ ] Use rootless Podman where practical.
+- [ ] Use rootless containers where practical where practical.
 - [ ] Treat Distrobox environments as convenience containers, not security boundaries.
 - [ ] Use disposable KVM/QEMU VMs for local isolation only when appropriate.
 - [ ] Keep specialized or untrusted workloads on Ares or other dedicated infrastructure when required.
