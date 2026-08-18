@@ -10,7 +10,7 @@ Use only firmware published for the exact MSI MAG B850 Tomahawk MAX WiFi. Record
 4. Load optimized defaults after the update.
 5. Reconfirm hardware detection.
 6. Apply required settings one group at a time.
-7. Install Fedora only after the firmware baseline is stable.
+7. Install Linux Mint only after the firmware baseline is stable.
 
 The motherboard Flash BIOS Button is a recovery option, not the default update method when normal UEFI access works.
 
@@ -20,7 +20,7 @@ The motherboard Flash BIOS Button is a recovery option, not the default update m
 - [ ] Current stable BIOS installed successfully.
 - [ ] UEFI boot enabled; legacy/CSM disabled unless a proven exception exists.
 - [ ] TPM/fTPM visible.
-- [ ] Secure Boot strategy documented for Fedora and the selected NVIDIA driver path.
+- [ ] Secure Boot strategy documented for Linux Mint and the selected NVIDIA driver path.
 - [ ] SVM enabled for optional KVM/QEMU use.
 - [ ] IOMMU enabled if required for future testing.
 - [ ] Resizable BAR enabled if supported by the final GPU configuration.
