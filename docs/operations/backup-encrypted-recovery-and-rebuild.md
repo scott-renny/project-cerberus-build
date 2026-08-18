@@ -19,7 +19,7 @@ Repository locations, passwords, encryption material, private hostnames, address
 
 1. Confirm the expected source categories and exclusions.
 2. Confirm the backup destination is mounted and belongs to the approved repository.
-3. Run the approved Fedora backup job with least privilege.
+3. Run the approved Linux Mint backup job with least privilege.
 4. Review completion status, warnings, duration, and new-data volume.
 5. Restore a representative file into an isolated temporary directory.
 6. Compare its hash or content with the trusted source.
@@ -49,16 +49,16 @@ sudo cryptsetup luksDump /dev/<verified-device>
 3. Scan restored data and inspect ownership, permissions, links, and executable content.
 4. Compare representative hashes.
 5. Move only approved data into the production profile.
-6. Rebuild applications from trusted Fedora or verified publisher sources.
+6. Rebuild applications from trusted Linux Mint or verified publisher sources.
 7. Rotate credentials when exposure cannot be excluded.
 
 ## Full trusted rebuild
 
 1. Preserve evidence when compromise is possible.
 2. Confirm the rebuild decision and positively identify the destination disk.
-3. Verify current Fedora installation media using official signing material and checksums.
+3. Verify current Linux Mint installation media using official signing material and checksums.
 4. Install in UEFI mode with the approved LUKS-backed layout and standard daily user.
-5. Apply updates and validate Secure Boot, SELinux, firewalld, and listening services.
+5. Apply updates and validate Secure Boot, AppArmor, firewalld, and listening services.
 6. Re-enroll Wazuh using a new approved identity and close temporary enrollment access.
 7. Restore only reviewed data through the selective-restore procedure.
 8. Rebuild hardware-key registrations and applications deliberately.
