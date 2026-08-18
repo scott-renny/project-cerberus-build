@@ -2,18 +2,18 @@
 
 ## Platform scope
 
-Cerberus is a Fedora KDE-based Linux engineering workstation and Cyber Operations Center command platform. It includes the physical build, operating-system deployment, desktop engineering, hardening, automation, infrastructure integration, testing, recovery, and lifecycle documentation.
+Cerberus is a Linux Mint Cinnamon-based Linux engineering workstation and Cyber Operations Center command platform. It includes the physical build, operating-system deployment, desktop engineering, hardening, automation, infrastructure integration, testing, recovery, and lifecycle documentation.
 
 Cerberus is not a permanent application server, Kubernetes node, or primary adversary-simulation host.
 
 ## Functional requirements
 
-- Run Fedora KDE Plasma as the host operating system.
+- Run Linux Mint Cinnamon as the host operating system.
 - Provide a secure, encrypted, recoverable primary workstation.
 - Drive six displays through two NVIDIA GPUs without an MST hub.
 - Support cybersecurity operations, software development, technical research, AI experimentation, and content creation.
 - Provide NVIDIA CUDA and NVENC capability for AI, GPU acceleration, and OBS.
-- Support Bash, Git, Python, Podman, Distrobox, Ansible, Kubernetes, AWS, and IaC tooling.
+- Support Bash, Git, Python, Docker, Distrobox, Ansible, Kubernetes, AWS, and IaC tooling.
 - Operate as the Ansible/IaC control node for authorized infrastructure.
 - Provide COC access to Atlas, Hestia, Ares, Olympus, Kubernetes, Wazuh, Grafana, UniFi, and related services.
 - Support optional disposable KVM/QEMU virtual machines when a defined local use case exists.
@@ -45,9 +45,9 @@ Cerberus is not a permanent application server, Kubernetes node, or primary adve
 
 ## Security requirements
 
-- UEFI boot, Secure Boot where supported by the final NVIDIA/Fedora deployment, TPM visibility, and current firmware.
+- UEFI boot, Secure Boot where supported by the final NVIDIA/Linux Mint deployment, TPM visibility, and current firmware.
 - Full-disk encryption with recovery material stored securely offline.
-- SELinux enforcing.
+- AppArmor enabled and enforcing.
 - Host firewall enabled with least-required exposure.
 - Standard user for routine work; elevation only when required.
 - Hardware security-key integration where supported.
@@ -57,11 +57,11 @@ Cerberus is not a permanent application server, Kubernetes node, or primary adve
 
 ## Success criteria
 
-- Fedora KDE boots reliably and all hardware is detected.
+- Linux Mint Cinnamon boots reliably and all hardware is detected.
 - Six displays survive reboot, logout/login, sleep/wake where supported, and driver updates.
 - NVIDIA acceleration, CUDA, and NVENC operate correctly.
 - Memory, storage, CPU, GPUs, thermals, and combined load pass validation.
-- Podman, Distrobox, Git, Python, Ansible, Kubernetes, and cloud tooling pass representative tests.
+- Docker, Distrobox, Git, Python, Ansible, Kubernetes, and cloud tooling pass representative tests.
 - Authorized COC systems are manageable without hosting their production services locally.
 - Security controls and recovery procedures are validated.
 - Streaming works after the engineering platform is stable.
