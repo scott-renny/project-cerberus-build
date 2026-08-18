@@ -7,7 +7,7 @@
 ## Routine schedule
 
 - Weekly: verify Wazuh connectivity, backup completion, failed services, storage alerts, and unexpected listening services.
-- Monthly: review storage health, representative restore evidence, Fedora package and kernel updates, Flatpak updates, firmware availability, and NVIDIA-driver compatibility.
+- Monthly: review storage health, representative restore evidence, Linux Mint package and kernel updates, Flatpak updates, firmware availability, and NVIDIA-driver compatibility.
 - Quarterly: inspect dust, filters, fans, temperatures, cable condition, UPS health, recovery media, and offline recovery-material access.
 - Before package, kernel, driver, or firmware changes: confirm a current backup, record the current state, review the transaction, and identify the rollback path.
 - After every material change: rerun the relevant validation-plan section and update this log.
