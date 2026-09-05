@@ -1,8 +1,8 @@
 # Project Cerberus
 
 [![Status: Planning and acquisition](https://img.shields.io/badge/status-planning%20%26%20acquisition-f0ad4e)](docs/planning/milestones.md)
-[![Platform: Linux Mint Cinnamon](https://img.shields.io/badge/platform-Linux Mint%20Cinnamon-51A2DA?logo=fedora&logoColor=white)](docs/platform/architecture.md)
-[![Hardware: Two components arrived](https://img.shields.io/badge/hardware-2%20components%20arrived-success)](docs/planning/parts-list.md)
+[![Platform: Linux Mint Cinnamon](https://img.shields.io/badge/platform-Linux%20Mint%20Cinnamon-87CF3E?logo=linuxmint&logoColor=white)](docs/platform/architecture.md)
+[![Hardware: Four components arrived](https://img.shields.io/badge/hardware-4%20components%20arrived-success)](docs/planning/parts-list.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 Project Cerberus is the design, construction, deployment, hardening, and ongoing development of a purpose-built Linux Mint Cinnamon Linux engineering workstation and Cyber Operations Center command platform.
@@ -56,12 +56,12 @@ Cerberus is an interactive operator and engineering platform. Permanent services
 | Case | MUSETEX K2 | **Owned — arrived** |
 | Motherboard | MSI MAG B850 Tomahawk MAX WiFi | **Owned — arrived** |
 | CPU | AMD Ryzen 9 9900X | Locked; purchase pending |
-| Cooler | MSI MAG CORELIQUID A15 360 | Locked; purchase pending; clearance validation required |
+| Cooler | MSI MAG CORELIQUID A15 360 | **Owned — arrived** |
 | Memory | 64 GB (2x32 GB) DDR5-6000 EXPO | Specification locked; exact kit selecting |
 | Primary storage | 2 TB M.2 NVMe SSD | Specification locked; exact model selecting |
 | Primary GPU | NVIDIA GeForce RTX 5060 Ti 16 GB | Specification locked; exact manufacturer/model selecting |
 | Secondary GPU | Compact, low-power NVIDIA display GPU | Direction locked; NVIDIA T400 preferred, P620 fallback |
-| Power supply | Corsair RM850e (2025), 850 W | Locked; purchase pending |
+| Power supply | Corsair RM850e (2025), 850 W | **Owned — arrived** |
 | UPS | CyberPower CP1500PFCLCD, 1500 VA / 1000 W | Locked; purchase pending |
 | USB expansion | Add only if final PCIe layout permits | Optional |
 
