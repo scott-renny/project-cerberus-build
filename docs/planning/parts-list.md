@@ -7,17 +7,17 @@
 | Case | MUSETEX K2 | Locked | **Owned — arrived** | **CA$89.99** |
 | Motherboard | MSI MAG B850 Tomahawk MAX WiFi | Locked | **Owned — arrived** | **CA$294.99** |
 | CPU | AMD Ryzen 9 9900X | **Locked** | Purchase pending | — |
-| Cooler | MSI MAG CORELIQUID A15 360 | **Locked**, pending clearance validation | Purchase pending | — |
+| Cooler | MSI MAG CORELIQUID A15 360 | **Locked** | **Owned — arrived** | **CA$129.99** |
 | Memory | 64 GB (2x32 GB) DDR5-6000 EXPO | Specification locked | Exact kit selecting | — |
 | Primary SSD | 2 TB M.2 NVMe | Specification locked | Exact model selecting | — |
 | Primary GPU | NVIDIA RTX 5060 Ti 16 GB | Specification locked | Exact model selecting | — |
 | Secondary GPU | Compact low-power NVIDIA display GPU | Direction locked | T400 preferred; P620 fallback | — |
-| Power supply | Corsair RM850e (2025), 850 W | **Locked** | Purchase pending | — |
+| Power supply | Corsair RM850e (2025), 850 W | **Locked** | **Owned — arrived** | Price not recorded |
 | UPS | CyberPower CP1500PFCLCD, 1500 VA / 1000 W | **Locked** | Purchase pending | — |
 | USB expansion | Model not selected | Optional | PCIe validation required | — |
 | GPU support | Slot-mounted bracket if required | Conditional | Final GPU dimensions required | — |
 
-The two recorded screenshot prices total **CA$384.98 before unrecorded tax and shipping**. The case remains outside the original core-budget convention but is included in total project spending.
+Four major components are now physically on hand: the MUSETEX K2 case, MSI MAG B850 Tomahawk MAX WiFi motherboard, MSI MAG CORELIQUID A15 360 cooler, and Corsair RM850e (2025) power supply. Known recorded pre-tax component prices total **CA$514.97**, excluding the PSU price because it has not yet been recorded here. The case remains outside the original core-budget convention but is included in total project spending.
 
 ## Selection rules
 
