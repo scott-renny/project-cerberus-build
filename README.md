@@ -1,9 +1,18 @@
-# Project Cerberus
+<div align="center">
 
-[![Status: Planning and acquisition](https://img.shields.io/badge/status-planning%20%26%20acquisition-f0ad4e)](docs/planning/milestones.md)
-[![Platform: Linux Mint Cinnamon](https://img.shields.io/badge/platform-Linux%20Mint%20Cinnamon-87CF3E?logo=linuxmint&logoColor=white)](docs/platform/architecture.md)
-[![Hardware: Four components arrived](https://img.shields.io/badge/hardware-4%20components%20arrived-success)](docs/planning/parts-list.md)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+# Project Cerberus
+### Linux Engineering Workstation · COC Command Platform
+
+![status: planning and acquisition](https://img.shields.io/badge/status-planning%20and%20acquisition-d97706?style=flat-square)
+![platform: Linux Mint Cinnamon](https://img.shields.io/badge/platform-Linux%20Mint%20Cinnamon-22d3ee?style=flat-square)
+
+[License](LICENSE)
+
+</div>
+
+[More than a system build](#more-than-a-system-build) · [Locked platform direction](#locked-platform-direction) · [Hardware decision matrix](#hardware-decision-matrix) · [PCIe and storage strategy](#pcie-and-storage-strategy) · [Project consolidation](#project-consolidation) · [System transition](#system-transition)
+
+---
 
 Project Cerberus is the design, construction, deployment, hardening, and ongoing development of a purpose-built Linux Mint Cinnamon Linux engineering workstation and Cyber Operations Center command platform.
 
